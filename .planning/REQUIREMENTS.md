@@ -65,8 +65,8 @@ In v1 roadmap but delivered last.
 ### Web Access
 
 - [x] **WEB-01**: Finance professional with no Claude Code install can connect MCP server to claude.ai and use all tools via browser chat
-- [ ] **WEB-02**: MCP server packaged with connection guide for non-technical users (no terminal knowledge required to connect)
-- [ ] **WEB-03**: Skill listed and documented for Claude plugin marketplace submission
+- [x] **WEB-02**: MCP server packaged with connection guide for non-technical users (no terminal knowledge required to connect)
+- [x] **WEB-03**: Skill listed and documented for Claude plugin marketplace submission
 
 ### Persona Variants
 
@@ -145,8 +145,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INVX-05 | Phase 3 | Complete |
 | INVX-06 | Phase 3 | Complete |
 | WEB-01 | Phase 4 | Complete |
-| WEB-02 | Phase 4 | Pending |
-| WEB-03 | Phase 4 | Pending |
+| WEB-02 | Phase 4 | Complete |
+| WEB-03 | Phase 4 | Complete |
 | PERS-01 | Phase 4 | Complete |
 | PERS-02 | Phase 4 | Complete |
 

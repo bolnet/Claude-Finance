@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Completed 04-02-PLAN.md — persona commands finance-analyst.md and finance-pm.md created
-last_updated: "2026-03-18T04:29:28.331Z"
+stopped_at: Completed 04-03-PLAN.md — plugin package, launch script, and marketplace manifest created
+last_updated: "2026-03-18T11:50:50.421Z"
 last_activity: "2026-03-18 — 01-03 complete: /finance command verified, finance MCP server connected, all packages OK"
 progress:
   total_phases: 4
   completed_phases: 3
   total_plans: 16
-  completed_plans: 14
+  completed_plans: 15
   percent: 67
 ---
 
@@ -63,6 +63,7 @@ Progress: [███████░░░] 67%
 | Phase 03-ml-workflow-tools P05 | 15 | 2 tasks | 11 files |
 | Phase 04-web-publishing-personas P01 | 3 | 2 tasks | 2 files |
 | Phase 04-web-publishing-personas P02 | 4 | 2 tasks | 3 files |
+| Phase 04-web-publishing-personas P03 | 8 | 2 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -103,6 +104,9 @@ Recent decisions affecting current work:
 - [Phase 04-web-publishing-personas]: start() function abstraction enables unit testing HTTP server without spawning a real process — mocker.patch on finance_mcp.server.mcp.run
 - [Phase 04-web-publishing-personas]: Persona commands reuse all existing MCP tools — zero new Python code; differentiation is entirely in role framing and intent routing
 - [Phase 04-web-publishing-personas]: finance-analyst emphasizes Sharpe/drawdown vs S&P 500 in single-stock context; finance-pm leads with drawdown/beta before Sharpe and treats tickers as portfolio holdings
+- [Phase 04-web-publishing-personas]: Plugin .mcp.json uses python -m finance_mcp.server (pip-installed), not .venv path — distributable without project clone
+- [Phase 04-web-publishing-personas]: start_web.sh reads ngrok URL from localhost:4040 API — avoids parsing ngrok stdout which varies by version
+- [Phase 04-web-publishing-personas]: Cloudflare Tunnel documented in start_web.sh as persistent-URL alternative to ngrok free tier
 
 ### Pending Todos
 
@@ -116,6 +120,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-18T04:29:28.327Z
-Stopped at: Completed 04-02-PLAN.md — persona commands finance-analyst.md and finance-pm.md created
+Last session: 2026-03-18T11:50:50.419Z
+Stopped at: Completed 04-03-PLAN.md — plugin package, launch script, and marketplace manifest created
 Resume file: None
