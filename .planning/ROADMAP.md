@@ -39,7 +39,7 @@ Full phase details: `.planning/milestones/v1.1-ROADMAP.md`
 - [x] **Phase 9: Market-Analysis Walkthroughs** — Hedge Fund and Investment Banking walkthroughs using volatility, correlation, and comparison tools (completed 2026-03-18)
 - [x] **Phase 10: Data-Profiling Walkthroughs** — FP&A and Accounting walkthroughs using CSV ingestion, data profiling, and liquidity predictor (completed 2026-03-18)
 - [x] **Phase 11: ML-Classifier Walkthrough** — Private Equity walkthrough using investor classifier for due diligence scoring (completed 2026-03-18)
-- [ ] **Phase 12: Walkthrough Test Suite** — Dedicated test files for all 5 walkthroughs validating structure, phases, and MCP tool coverage
+- [x] **Phase 12: Walkthrough Test Suite** — Dedicated test files for all 5 walkthroughs validating structure, phases, and MCP tool coverage (completed 2026-03-18)
 
 ## Phase Details
 
@@ -95,7 +95,7 @@ Plans:
   2. Tests validate that each walkthrough file references the expected MCP tools for its scenario
   3. Tests validate that each walkthrough has the required phase structure (multi-phase scenario sections present)
   4. `pytest` passes with 0 failures across all 5 walkthrough test files
-**Plans:** 1 plan
+**Plans:** 1/1 plans complete
 
 Plans:
 - [ ] 12-01-PLAN.md — Test files for all 5 walkthroughs: structure validation, tool coverage assertions, pytest integration
@@ -115,7 +115,7 @@ Plans:
 | 9. Market-Analysis Walkthroughs | v1.2 | 2/2 | Complete | 2026-03-18 |
 | 10. Data-Profiling Walkthroughs | v1.2 | 2/2 | Complete | 2026-03-18 |
 | 11. ML-Classifier Walkthrough | 1/1 | Complete    | 2026-03-18 | - |
-| 12. Walkthrough Test Suite | v1.2 | 0/1 | Not started | - |
+| 12. Walkthrough Test Suite | 1/1 | Complete   | 2026-03-18 | - |
 
 ---
 *Last updated: 2026-03-18 — Phase 11 plan created*

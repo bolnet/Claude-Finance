@@ -40,7 +40,7 @@ Requirements for 5 remaining role-based walkthrough slash commands. Each follows
 
 ### Testing
 
-- [ ] **TEST-01**: Each walkthrough has a dedicated test file validating structure, phases, and MCP tool coverage
+- [x] **TEST-01**: Each walkthrough has a dedicated test file validating structure, phases, and MCP tool coverage
 
 ## Future Requirements
 
@@ -75,7 +75,7 @@ None — all 5 remaining walkthroughs scoped for this milestone.
 | ACCT-01 | Phase 10 | Complete |
 | ACCT-02 | Phase 10 | Complete |
 | ACCT-03 | Phase 10 | Complete |
-| TEST-01 | Phase 12 | Pending |
+| TEST-01 | Phase 12 | Complete |
 
 **Coverage:**
 - v1.2 requirements: 17 total

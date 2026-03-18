@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.2
 milestone_name: Role Walkthroughs
 status: planning
-stopped_at: Completed 11-01-PLAN.md (Private Equity Walkthrough)
-last_updated: "2026-03-18T21:40:26.290Z"
+stopped_at: Completed 12-01-PLAN.md (Walkthrough Test Suite)
+last_updated: "2026-03-18T21:53:53.764Z"
 last_activity: 2026-03-18 — v1.2 roadmap created
 progress:
   total_phases: 4
-  completed_phases: 3
-  total_plans: 5
-  completed_plans: 5
+  completed_phases: 4
+  total_plans: 6
+  completed_plans: 6
 ---
 
 # Project State
@@ -60,6 +60,7 @@ v1.2 roadmap decisions:
 - [Phase 10-data-profiling-walkthroughs]: FP&A walkthrough uses 4-phase structure with pure analysis steps for ERP data quality report, feature-to-budget mapping, and three-scenario budget synthesis
 - [Phase 11-ml-classifier-walkthrough]: PE/VC reframing: investor_classifier confidence scores serve dual purpose — prospect IC conviction level and portfolio thesis drift signal
 - [Phase 11-ml-classifier-walkthrough]: walkthrough-private-equity completes 6th and final role-based walkthrough in v1.2 Role Walkthroughs milestone
+- [Phase 12-walkthrough-test-suite]: Excluded mcp__finance__ping from REQUIRED_MCP_TOOLS — ping is a diagnostic utility, not a workflow tool
 
 ### Pending Todos
 
@@ -71,6 +72,6 @@ None. Existing 11 MCP tools are fully functional. Equity research walkthrough pa
 
 ## Session Continuity
 
-Last session: 2026-03-18T21:38:13.840Z
-Stopped at: Completed 11-01-PLAN.md (Private Equity Walkthrough)
+Last session: 2026-03-18T21:53:53.762Z
+Stopped at: Completed 12-01-PLAN.md (Walkthrough Test Suite)
 Resume file: None
