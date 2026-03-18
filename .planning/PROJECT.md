@@ -8,16 +8,16 @@ The skill is an MCP server with 11 tools covering market analysis (price charts,
 
 **v1.1 shipped.** v1.0 MVP (38 requirements) + v1.1 Interactive Demo (17 requirements) delivered across 8 phases.
 
-## Current Milestone: v1.2 Role Walkthroughs
+## Current Milestone: v1.3 GitHub Pages Site
 
-**Goal:** Build the 5 remaining role-based walkthrough slash commands, each a deep multi-phase scenario that simulates real finance workflows using existing MCP tools.
+**Goal:** Build a beautiful, multi-page GitHub Pages site that showcases the Finance AI Skill to finance professionals — landing page with a strong hook, features, role walkthroughs, demo visuals, and getting started guide.
 
 **Target features:**
-- Hedge Fund / Trading Desk walkthrough (`/walkthrough-hedge-fund`)
-- Investment Banking walkthrough (`/walkthrough-investment-banking`)
-- FP&A Analyst walkthrough (`/walkthrough-fpa`)
-- Private Equity / VC walkthrough (`/walkthrough-private-equity`)
-- Accountant / Controller walkthrough (`/walkthrough-accounting`)
+- Landing page with compelling value proposition and hook for finance professionals
+- Features page showcasing 11 MCP tools across market analysis and ML workflows
+- Walkthroughs page highlighting 6 role-based scenarios (equity research, hedge fund, IB, FP&A, PE, accounting)
+- Getting Started page with installation for Claude Code and claude.ai
+- Visual examples using actual chart outputs (price charts, correlation heatmaps, confusion matrices, etc.)
 
 ## Core Value
 
@@ -41,6 +41,7 @@ Finance professionals get professional-grade analysis by describing what they wa
 - ✓ Live yfinance data for market analysis demos with pause-and-explain flow — v1.1
 - ✓ Bundled sample CSV for ML workflow demos (no user data required) — v1.1
 - ✓ Persona contrast demo: analyst vs PM framing on same risk metrics data — v1.1
+- ✓ 6 role-based walkthroughs (equity research, hedge fund, IB, FP&A, PE, accounting) — v1.2
 
 ### Active
 
@@ -63,7 +64,7 @@ Finance professionals get professional-grade analysis by describing what they wa
 
 ## Context
 
-**v1.1 shipped 2026-03-18.** 8 phases, 25 plans, 3,832 LOC Python, 105 tests passing.
+**v1.2 shipped 2026-03-18.** 12 phases, 31 plans, 3,832 LOC Python, 105 tests passing, 6 role walkthroughs.
 
 **Tech stack:** Python 3.14, FastMCP 2.x, yfinance 0.2.54+, scikit-learn 1.8.0, pandas, matplotlib (Agg), seaborn, joblib
 
@@ -98,4 +99,4 @@ Finance professionals get professional-grade analysis by describing what they wa
 | liquidity_predictor restricted to 3 features | Full CSV columns caused column-mismatch at inference time | ✓ Good — fixed inference stability |
 
 ---
-*Last updated: 2026-03-18 after v1.2 milestone start*
+*Last updated: 2026-03-18 after v1.3 milestone start*
