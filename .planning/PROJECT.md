@@ -8,6 +8,17 @@ The skill is an MCP server with 11 tools covering market analysis (price charts,
 
 **v1.1 shipped.** v1.0 MVP (38 requirements) + v1.1 Interactive Demo (17 requirements) delivered across 8 phases.
 
+## Current Milestone: v1.2 Role Walkthroughs
+
+**Goal:** Build the 5 remaining role-based walkthrough slash commands, each a deep multi-phase scenario that simulates real finance workflows using existing MCP tools.
+
+**Target features:**
+- Hedge Fund / Trading Desk walkthrough (`/walkthrough-hedge-fund`)
+- Investment Banking walkthrough (`/walkthrough-investment-banking`)
+- FP&A Analyst walkthrough (`/walkthrough-fpa`)
+- Private Equity / VC walkthrough (`/walkthrough-private-equity`)
+- Accountant / Controller walkthrough (`/walkthrough-accounting`)
+
 ## Core Value
 
 Finance professionals get professional-grade analysis by describing what they want — the skill writes, runs, and interprets the code for them.
@@ -87,4 +98,4 @@ Finance professionals get professional-grade analysis by describing what they wa
 | liquidity_predictor restricted to 3 features | Full CSV columns caused column-mismatch at inference time | ✓ Good — fixed inference stability |
 
 ---
-*Last updated: 2026-03-18 after v1.1 milestone completion*
+*Last updated: 2026-03-18 after v1.2 milestone start*
