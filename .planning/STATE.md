@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Interactive Demo
 status: planning
-stopped_at: Completed 06-01-PLAN.md
-last_updated: "2026-03-18T15:10:24.976Z"
+stopped_at: Completed 06-02-PLAN.md
+last_updated: "2026-03-18T15:23:59.188Z"
 last_activity: 2026-03-18 — v1.1 roadmap created
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 4
-  completed_plans: 3
+  completed_plans: 4
   percent: 0
 ---
 
@@ -58,6 +58,7 @@ Phase 8: [ ] [ ]
 | Phase 05-demo-command-flow P01 | 13 | 2 tasks | 2 files |
 | Phase 05-demo-command-flow P02 | 15 | 2 tasks | 1 files |
 | Phase 06-market-analysis-demos P01 | 3 | 2 tasks | 3 files |
+| Phase 06-market-analysis-demos P02 | 5 | 2 tasks | 0 files |
 
 ## Accumulated Context
 
@@ -108,6 +109,7 @@ Recent decisions affecting current work:
 - [Phase 05-demo-command-flow]: Frontmatter parser splits on first two --- delimiters only — body can contain --- horizontal rule without breaking slash command tests
 - [Phase 06-market-analysis-demos]: demo.md Steps 3-8 use start: [N days before today, YYYY-MM-DD format] dynamic instruction pattern — computes dates at Claude runtime
 - [Phase 06-market-analysis-demos]: xfail used as CI gate for network tests — tests degrade gracefully when Yahoo Finance unreachable, xpassed when live
+- [Phase 06-market-analysis-demos]: Human verification via /demo is the acceptance gate for MRKT-01 through MRKT-06 — automated xfail tests prove function-level correctness; /demo proves full MCP execution chain
 
 ### Pending Todos
 
@@ -119,6 +121,6 @@ None — v1.0 complete. v1.1 roadmap ready.
 
 ## Session Continuity
 
-Last session: 2026-03-18T15:10:15.630Z
-Stopped at: Completed 06-01-PLAN.md
+Last session: 2026-03-18T15:23:59.186Z
+Stopped at: Completed 06-02-PLAN.md
 Resume file: None
