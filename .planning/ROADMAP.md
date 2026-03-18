@@ -34,11 +34,11 @@ Full phase details: `.planning/milestones/v1.0-ROADMAP.md`
   2. After each tool demo step, the user sees a plain-English explanation of what just happened before the next step begins
   3. At the end of the walkthrough, the user sees a completion summary listing all 11 tools demonstrated
   4. The demo command is registered in `.claude/commands/` and discoverable via Claude Code slash command autocomplete
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 05-01: Demo command scaffold — SKILL.md entry, DEMO.md walkthrough script, welcome and completion sections
-- [ ] 05-02: Pause-and-explain mechanism — step framing, per-tool explanation text, summary assembly
+- [ ] 05-01-PLAN.md — Create /demo slash command with walkthrough script and SKILL.md demo intent
+- [ ] 05-02-PLAN.md — Structural validation tests and human verification of discoverability
 
 ### Phase 6: Market Analysis Demos
 **Goal**: Users see all 6 market analysis MCP tools execute live with real ticker data and receive a plain-English explanation of each output
@@ -94,10 +94,10 @@ Plans:
 | 2. Market Analysis Tools | v1.0 | 4/4 | Complete | 2026-03-18 |
 | 3. ML Workflow Tools | v1.0 | 5/5 | Complete | 2026-03-18 |
 | 4. Web Publishing & Personas | v1.0 | 4/4 | Complete | 2026-03-18 |
-| 5. Demo Command & Flow | v1.1 | 0/2 | Not started | - |
+| 5. Demo Command & Flow | v1.1 | 0/2 | Planning complete | - |
 | 6. Market Analysis Demos | v1.1 | 0/2 | Not started | - |
 | 7. ML Workflow Demos | v1.1 | 0/3 | Not started | - |
 | 8. Persona Demos | v1.1 | 0/2 | Not started | - |
 
 ---
-*Last updated: 2026-03-18 — v1.1 roadmap created (Phases 5–8)*
+*Last updated: 2026-03-18 — Phase 5 plans created*
