@@ -1,17 +1,17 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: milestone
-status: completed
-stopped_at: Completed 04-04-PLAN.md — Phase 4 functional verification and human sign-off complete; v1.0 milestone finished
-last_updated: "2026-03-18T12:29:13.765Z"
-last_activity: "2026-03-18 — 01-03 complete: /finance command verified, finance MCP server connected, all packages OK"
+milestone: v1.1
+milestone_name: Interactive Demo
+status: active
+stopped_at: null
+last_updated: "2026-03-18"
+last_activity: "2026-03-18 — Milestone v1.1 started"
 progress:
-  total_phases: 4
-  completed_phases: 4
-  total_plans: 16
-  completed_plans: 16
-  percent: 67
+  total_phases: 0
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
+  percent: 0
 ---
 
 # Project State
@@ -21,15 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-18)
 
 **Core value:** Finance professionals get professional-grade analysis by describing what they want — the skill writes, runs, and interprets the code for them.
-**Current focus:** v1.0 complete — planning next milestone
+**Current focus:** v1.1 Interactive Demo — /demo slash command
 
 ## Current Position
 
-Phase: 4 of 4 (Web Publishing & Personas) — COMPLETE
-Status: v1.0 milestone complete — all 38 requirements shipped
-Last activity: 2026-03-18 — v1.0 milestone archived
-
-Progress: [██████████] 100%
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-03-18 — Milestone v1.1 started
 
 ## Performance Metrics
 

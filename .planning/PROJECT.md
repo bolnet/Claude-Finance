@@ -8,6 +8,16 @@ The skill is an MCP server with 11 tools covering market analysis (price charts,
 
 **v1.0 shipped.** All 38 v1 requirements delivered across 4 phases.
 
+## Current Milestone: v1.1 Interactive Demo
+
+**Goal:** Let users experience every capability of the Finance AI Skill through a guided `/demo` slash command that runs all 11 MCP tools and both personas with real examples, pausing between each for explanation.
+
+**Target features:**
+- `/demo` slash command with step-by-step walkthrough of all tools
+- Live yfinance data for market analysis demos, bundled CSV for ML demos
+- Pause-and-explain flow between each tool demo
+- Persona variant showcase (analyst vs PM framing on same data)
+
 ## Core Value
 
 Finance professionals get professional-grade analysis by describing what they want — the skill writes, runs, and interprets the code for them.
@@ -79,4 +89,4 @@ Finance professionals get professional-grade analysis by describing what they wa
 | Deferred Nyquist validation | VALIDATION.md files created but not completed | ⚠️ Revisit — all 4 phases in draft state |
 
 ---
-*Last updated: 2026-03-18 after v1.0 milestone*
+*Last updated: 2026-03-18 after v1.1 milestone start*
