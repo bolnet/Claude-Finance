@@ -70,8 +70,8 @@ In v1 roadmap but delivered last.
 
 ### Persona Variants
 
-- [ ] **PERS-01**: `/finance-analyst` command — equity-focused variant (stock analysis, peer comparison, valuation ratios emphasis)
-- [ ] **PERS-02**: `/finance-pm` command — portfolio manager variant (risk/return attribution, portfolio-level metrics)
+- [x] **PERS-01**: `/finance-analyst` command — equity-focused variant (stock analysis, peer comparison, valuation ratios emphasis)
+- [x] **PERS-02**: `/finance-pm` command — portfolio manager variant (risk/return attribution, portfolio-level metrics)
 
 ## v2 Requirements
 
@@ -147,8 +147,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | WEB-01 | Phase 4 | Complete |
 | WEB-02 | Phase 4 | Pending |
 | WEB-03 | Phase 4 | Pending |
-| PERS-01 | Phase 4 | Pending |
-| PERS-02 | Phase 4 | Pending |
+| PERS-01 | Phase 4 | Complete |
+| PERS-02 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 38 total
