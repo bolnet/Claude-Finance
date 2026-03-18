@@ -188,7 +188,7 @@ First, call the MCP tool `investor_classifier` with:
 Then call the MCP tool `classify_investor` with:
 - age: 42
 - income: 120000
-- risk_tolerance: "moderate"
+- risk_tolerance: 0.5
 - product_preference: "equities"
 
 After running (if not skipped):
