@@ -50,11 +50,11 @@ Plans:
   3. User sees `get_volatility` output with annualized volatility explained in plain English
   4. User sees `get_risk_metrics` output with Sharpe ratio, max drawdown, and beta explained in plain English
   5. User sees `compare_tickers` run on AAPL vs MSFT and `correlation_map` produce a heatmap, each with explanation
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: Market analysis demo steps — six tool invocations with live ticker, explanation text per tool
-- [ ] 06-02: Demo verification — all 6 tools run end-to-end in demo flow without error
+- [ ] 06-01-PLAN.md — Fix demo.md parameter schemas and create live integration tests for all 6 market analysis tools
+- [ ] 06-02-PLAN.md — Full test suite verification and human sign-off on demo Steps 3-8
 
 ### Phase 7: ML Workflow Demos
 **Goal**: Users see all 4 ML workflow MCP tools execute on bundled sample data and receive explanations of the cleaning, training, and inference outputs
@@ -94,10 +94,10 @@ Plans:
 | 2. Market Analysis Tools | v1.0 | 4/4 | Complete | 2026-03-18 |
 | 3. ML Workflow Tools | v1.0 | 5/5 | Complete | 2026-03-18 |
 | 4. Web Publishing & Personas | v1.0 | 4/4 | Complete | 2026-03-18 |
-| 5. Demo Command & Flow | 2/2 | Complete   | 2026-03-18 | - |
+| 5. Demo Command & Flow | v1.1 | 2/2 | Complete | 2026-03-18 |
 | 6. Market Analysis Demos | v1.1 | 0/2 | Not started | - |
 | 7. ML Workflow Demos | v1.1 | 0/3 | Not started | - |
 | 8. Persona Demos | v1.1 | 0/2 | Not started | - |
 
 ---
-*Last updated: 2026-03-18 — Phase 5 plans created*
+*Last updated: 2026-03-18 — Phase 6 plans created*
