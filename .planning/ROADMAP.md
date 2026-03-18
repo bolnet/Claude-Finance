@@ -110,7 +110,7 @@ Plans:
 | 10. Data-Profiling Walkthroughs | v1.2 | 2/2 | Complete | 2026-03-18 |
 | 11. ML-Classifier Walkthrough | v1.2 | 1/1 | Complete | 2026-03-18 |
 | 12. Walkthrough Test Suite | v1.2 | 1/1 | Complete | 2026-03-18 |
-| 13. Site Scaffolding and Visual Assets | 2/2 | Complete   | 2026-03-18 | - |
+| 13. Site Scaffolding and Visual Assets | 2/2 | Complete    | 2026-03-18 | - |
 | 14. Content Pages | v1.3 | 0/? | Not started | - |
 | 15. Getting Started and Polish | v1.3 | 0/? | Not started | - |
 
