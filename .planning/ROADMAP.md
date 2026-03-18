@@ -32,7 +32,7 @@ Full phase details: `.planning/milestones/v1.1-ROADMAP.md`
 
 </details>
 
-### 🚧 v1.2 Role Walkthroughs (In Progress)
+### v1.2 Role Walkthroughs (In Progress)
 
 **Milestone Goal:** Build 5 remaining role-based walkthrough slash commands, each a deep multi-phase scenario simulating real finance workflows using the existing 11 MCP tools.
 
@@ -70,8 +70,8 @@ Plans:
 **Plans:** 2/2 plans complete
 
 Plans:
-- [ ] 10-01-PLAN.md — FP&A walkthrough: walkthrough-fpa.md scenario file, CSV profiling + liquidity predictor tool sequence
-- [ ] 10-02-PLAN.md — Accounting walkthrough: walkthrough-accounting.md scenario file, CSV ingestion + anomaly framing tool sequence
+- [x] 10-01-PLAN.md — FP&A walkthrough: walkthrough-fpa.md scenario file, CSV profiling + liquidity predictor tool sequence
+- [x] 10-02-PLAN.md — Accounting walkthrough: walkthrough-accounting.md scenario file, CSV ingestion + anomaly framing tool sequence
 
 ### Phase 11: ML-Classifier Walkthrough
 **Goal**: Finance professionals in private equity and venture capital roles can run a scenario-driven walkthrough that simulates real due diligence scoring and portfolio monitoring using the investor classifier
@@ -81,10 +81,10 @@ Plans:
   1. User can run `/walkthrough-private-equity` and receive a multi-phase due diligence scenario that uses the investor classifier to score prospects
   2. Walkthrough covers multi-prospect comparison (side-by-side scoring) and portfolio company monitoring output
   3. Output interprets classifier results in PE/VC framing (investment thesis language, portfolio risk language) rather than generic ML output
-**Plans**: TBD
+**Plans:** 1 plan
 
 Plans:
-- [ ] 11-01: Private Equity walkthrough — walkthrough-private-equity.md scenario file, investor classifier due diligence sequence
+- [ ] 11-01-PLAN.md — Private Equity walkthrough: walkthrough-private-equity.md scenario file, investor classifier due diligence sequence
 
 ### Phase 12: Walkthrough Test Suite
 **Goal**: All 5 walkthrough slash commands have dedicated test files that validate structure, phase completeness, and MCP tool coverage — giving the team confidence that walkthroughs are structurally sound and will execute correctly
@@ -113,9 +113,9 @@ Plans:
 | 7. ML Workflow Demos | v1.1 | 3/3 | Complete | 2026-03-18 |
 | 8. Persona Demos | v1.1 | 2/2 | Complete | 2026-03-18 |
 | 9. Market-Analysis Walkthroughs | v1.2 | 2/2 | Complete | 2026-03-18 |
-| 10. Data-Profiling Walkthroughs | 2/2 | Complete    | 2026-03-18 | - |
+| 10. Data-Profiling Walkthroughs | v1.2 | 2/2 | Complete | 2026-03-18 |
 | 11. ML-Classifier Walkthrough | v1.2 | 0/1 | Not started | - |
 | 12. Walkthrough Test Suite | v1.2 | 0/1 | Not started | - |
 
 ---
-*Last updated: 2026-03-18 — Phase 10 plans created*
+*Last updated: 2026-03-18 — Phase 11 plan created*
