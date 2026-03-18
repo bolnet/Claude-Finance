@@ -4,7 +4,7 @@ milestone: v1.2
 milestone_name: Role Walkthroughs
 status: planning
 stopped_at: Completed 09-02-PLAN.md (Investment Banking Walkthrough)
-last_updated: "2026-03-18T20:48:38.125Z"
+last_updated: "2026-03-18T20:52:27.592Z"
 last_activity: 2026-03-18 — v1.2 roadmap created
 progress:
   total_phases: 4
