@@ -18,8 +18,8 @@ Each step runs a real tool with real data and explains the results in plain Engl
 
 ## Environment Context
 
-Python version: !`python3 --version 2>&1`
-Finance packages: !`python3 -c "import yfinance, pandas, numpy, matplotlib, seaborn, sklearn; print('All OK')" 2>&1`
+Python version: !`.venv/bin/python3 --version 2>&1`
+Finance packages: !`.venv/bin/python3 -c "import yfinance, pandas, numpy, matplotlib, seaborn, sklearn; print('All OK')" 2>&1`
 Working directory: !`pwd`
 Output directory status: !`ls finance_output/ 2>/dev/null && echo "exists" || echo "will be created on first run"`
 
