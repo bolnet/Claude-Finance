@@ -22,7 +22,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Infrastructure & MCP Scaffold** - MCP server foundation, data adapter, output conventions, Claude Code command wrapper, and environment validation (completed 2026-03-18)
 - [x] **Phase 2: Market Analysis Tools** - Live stock analysis via yfinance — price charts, returns, volatility, risk metrics, multi-ticker comparison, correlation heatmap — as MCP tools (completed 2026-03-18)
-- [ ] **Phase 3: ML Workflow Tools** - Liquidity predictor (regression, ML 03) and investor classifier (classification, ML 05-06) as MCP tools on user-provided CSV data
+- [x] **Phase 3: ML Workflow Tools** - Liquidity predictor (regression, ML 03) and investor classifier (classification, ML 05-06) as MCP tools on user-provided CSV data (completed 2026-03-18)
 - [ ] **Phase 4: Web Publishing & Personas** - claude.ai plugin packaging, marketplace submission, analyst/PM-trader persona variants
 
 ## Phase Details
@@ -107,5 +107,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Infrastructure & MCP Scaffold | 3/3 | Complete   | 2026-03-18 |
 | 2. Market Analysis Tools | 4/4 | Complete   | 2026-03-18 |
-| 3. ML Workflow Tools | 4/5 | In Progress|  |
+| 3. ML Workflow Tools | 5/5 | Complete   | 2026-03-18 |
 | 4. Web Publishing & Personas | 0/4 | Not started | - |
