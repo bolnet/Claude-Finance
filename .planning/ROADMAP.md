@@ -20,7 +20,7 @@ Build a finance AI skill that works in both Claude Code (terminal) and claude.ai
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Infrastructure & MCP Scaffold** - MCP server foundation, data adapter, output conventions, Claude Code command wrapper, and environment validation
+- [x] **Phase 1: Infrastructure & MCP Scaffold** - MCP server foundation, data adapter, output conventions, Claude Code command wrapper, and environment validation (completed 2026-03-18)
 - [ ] **Phase 2: Market Analysis Tools** - Live stock analysis via yfinance — price charts, returns, volatility, risk metrics, multi-ticker comparison, correlation heatmap — as MCP tools
 - [ ] **Phase 3: ML Workflow Tools** - Liquidity predictor (regression, ML 03) and investor classifier (classification, ML 05-06) as MCP tools on user-provided CSV data
 - [ ] **Phase 4: Web Publishing & Personas** - claude.ai plugin packaging, marketplace submission, analyst/PM-trader persona variants
@@ -102,7 +102,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Infrastructure & MCP Scaffold | 2/3 | In Progress|  |
+| 1. Infrastructure & MCP Scaffold | 3/3 | Complete   | 2026-03-18 |
 | 2. Market Analysis Tools | 0/3 | Not started | - |
 | 3. ML Workflow Tools | 0/4 | Not started | - |
 | 4. Web Publishing & Personas | 0/3 | Not started | - |

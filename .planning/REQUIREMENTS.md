@@ -25,10 +25,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Command & Skill Structure
 
-- [ ] **CMD-01**: `/finance` slash command file exists at `.claude/commands/finance.md` with correct frontmatter (allowed-tools, description, argument-hint)
-- [ ] **CMD-02**: Finance SKILL.md exists at `.claude/skills/finance/SKILL.md` with intent classification logic for routing requests to MCP tools
-- [ ] **CMD-03**: Command uses dynamic context injection (`!ls`, `!python3 --version`, `!pip list`) before code generation to produce runnable scripts
-- [ ] **CMD-04**: Python scripts are written to disk first (Write tool), then executed (Bash tool) — not inline `python3 -c` strings
+- [x] **CMD-01**: `/finance` slash command file exists at `.claude/commands/finance.md` with correct frontmatter (allowed-tools, description, argument-hint)
+- [x] **CMD-02**: Finance SKILL.md exists at `.claude/skills/finance/SKILL.md` with intent classification logic for routing requests to MCP tools
+- [x] **CMD-03**: Command uses dynamic context injection (`!ls`, `!python3 --version`, `!pip list`) before code generation to produce runnable scripts
+- [x] **CMD-04**: Python scripts are written to disk first (Write tool), then executed (Bash tool) — not inline `python3 -c` strings
 
 ### Market Analysis
 
@@ -121,10 +121,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | MCP-01 | Phase 1 | Complete (01-01) |
 | MCP-02 | Phase 1 | Complete (01-01) |
 | MCP-03 | Phase 1 | Complete (01-01) |
-| CMD-01 | Phase 1 | Pending |
-| CMD-02 | Phase 1 | Pending |
-| CMD-03 | Phase 1 | Pending |
-| CMD-04 | Phase 1 | Pending |
+| CMD-01 | Phase 1 | Complete |
+| CMD-02 | Phase 1 | Complete |
+| CMD-03 | Phase 1 | Complete |
+| CMD-04 | Phase 1 | Complete |
 | MKTX-01 | Phase 2 | Pending |
 | MKTX-02 | Phase 2 | Pending |
 | MKTX-03 | Phase 2 | Pending |

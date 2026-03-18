@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-02-PLAN.md — adapter.py, validators.py, output.py, check_env.py, finance_output/ directories
-last_updated: "2026-03-18T00:52:46.493Z"
-last_activity: "2026-03-18 — 01-01 bootstrap complete: FastMCP server, package scaffold, Wave 0 test harness"
+stopped_at: Completed 01-03-PLAN.md — awaiting human-verify checkpoint for /finance command in Claude Code
+last_updated: "2026-03-18T00:57:03.315Z"
+last_activity: "2026-03-18 — 01-02 complete: adapter.py, validators.py, output.py, check_env.py, finance_output/ directories"
 progress:
   total_phases: 4
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 3
-  completed_plans: 2
+  completed_plans: 3
   percent: 67
 ---
 
@@ -51,6 +51,7 @@ Progress: [███████░░░] 67%
 
 *Updated after each plan completion*
 | Phase 01-infrastructure-mcp-scaffold P02 | 3 | 2 tasks | 6 files |
+| Phase 01-infrastructure-mcp-scaffold P03 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -68,6 +69,8 @@ Recent decisions affecting current work:
 - [Phase 01-02]: Close column is adjusted price (auto_adjust=True in yfinance 0.2.54+); Adj Close removed; get_adjusted_prices() accessor enforces this
 - [Phase 01-02]: matplotlib.use(Agg) in output.py module scope before pyplot import; plt.show() string banned across all src; enforced by test
 - [Phase 01-02]: validate_dataframe requires minimum 2 rows — single-row DataFrames break return calculations; fail fast at fetch time
+- [Phase 01-infrastructure-mcp-scaffold]: /finance command uses dynamic context injection (!command syntax) for python version, packages, pwd, CSV files, and output dir status before any code generation
+- [Phase 01-infrastructure-mcp-scaffold]: Write-then-execute is the ONLY allowed Python execution method — finance_output/last_run.py written via Write tool, then executed via Bash; no inline python3 -c strings
 
 ### Pending Todos
 
@@ -81,6 +84,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-18T00:52:46.490Z
-Stopped at: Completed 01-02-PLAN.md — adapter.py, validators.py, output.py, check_env.py, finance_output/ directories
+Last session: 2026-03-18T00:57:03.313Z
+Stopped at: Completed 01-03-PLAN.md — awaiting human-verify checkpoint for /finance command in Claude Code
 Resume file: None
