@@ -16,9 +16,9 @@ Requirements for 5 remaining role-based walkthrough slash commands. Each follows
 
 ### Investment Banking
 
-- [ ] **IB-01**: User can run `/walkthrough-investment-banking` for a comparable company analysis scenario
-- [ ] **IB-02**: Walkthrough covers 5-ticker comps with relative valuation framing
-- [ ] **IB-03**: Walkthrough covers relative performance analysis for deal pitch materials
+- [x] **IB-01**: User can run `/walkthrough-investment-banking` for a comparable company analysis scenario
+- [x] **IB-02**: Walkthrough covers 5-ticker comps with relative valuation framing
+- [x] **IB-03**: Walkthrough covers relative performance analysis for deal pitch materials
 
 ### FP&A Analyst
 
@@ -63,9 +63,9 @@ None — all 5 remaining walkthroughs scoped for this milestone.
 | HF-02 | Phase 9 | Complete |
 | HF-03 | Phase 9 | Complete |
 | HF-04 | Phase 9 | Complete |
-| IB-01 | Phase 9 | Pending |
-| IB-02 | Phase 9 | Pending |
-| IB-03 | Phase 9 | Pending |
+| IB-01 | Phase 9 | Complete |
+| IB-02 | Phase 9 | Complete |
+| IB-03 | Phase 9 | Complete |
 | FPA-01 | Phase 10 | Pending |
 | FPA-02 | Phase 10 | Pending |
 | FPA-03 | Phase 10 | Pending |
