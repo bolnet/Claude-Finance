@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Completed 04-03-PLAN.md — plugin package, launch script, and marketplace manifest created
-last_updated: "2026-03-18T11:50:50.421Z"
+stopped_at: Completed 04-04-PLAN.md — Phase 4 functional verification and human sign-off complete; v1.0 milestone finished
+last_updated: "2026-03-18T12:03:14.871Z"
 last_activity: "2026-03-18 — 01-03 complete: /finance command verified, finance MCP server connected, all packages OK"
 progress:
   total_phases: 4
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 16
-  completed_plans: 15
+  completed_plans: 16
   percent: 67
 ---
 
@@ -64,6 +64,7 @@ Progress: [███████░░░] 67%
 | Phase 04-web-publishing-personas P01 | 3 | 2 tasks | 2 files |
 | Phase 04-web-publishing-personas P02 | 4 | 2 tasks | 3 files |
 | Phase 04-web-publishing-personas P03 | 8 | 2 tasks | 9 files |
+| Phase 04-web-publishing-personas P04 | 5 | 2 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -107,6 +108,8 @@ Recent decisions affecting current work:
 - [Phase 04-web-publishing-personas]: Plugin .mcp.json uses python -m finance_mcp.server (pip-installed), not .venv path — distributable without project clone
 - [Phase 04-web-publishing-personas]: start_web.sh reads ngrok URL from localhost:4040 API — avoids parsing ngrok stdout which varies by version
 - [Phase 04-web-publishing-personas]: Cloudflare Tunnel documented in start_web.sh as persistent-URL alternative to ngrok free tier
+- [Phase 04-web-publishing-personas]: Human verification sign-off is the acceptance gate for Phase 4 — automated tests prove structural correctness; human review confirms persona framing works in Claude Code
+- [Phase 04-web-publishing-personas]: WEB-02 ngrok live URL test deferred to real deployment; automated import test sufficient for CI gate
 
 ### Pending Todos
 
@@ -120,6 +123,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-18T11:50:50.419Z
-Stopped at: Completed 04-03-PLAN.md — plugin package, launch script, and marketplace manifest created
+Last session: 2026-03-18T12:03:14.869Z
+Stopped at: Completed 04-04-PLAN.md — Phase 4 functional verification and human sign-off complete; v1.0 milestone finished
 Resume file: None
