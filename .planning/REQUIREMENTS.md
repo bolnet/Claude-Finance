@@ -51,12 +51,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Investor Classifier (ML 05-06 Curriculum)
 
-- [ ] **INVX-01**: User can provide investor CSV file path; skill detects features and target column automatically
-- [ ] **INVX-02**: Skill performs feature engineering: dummy variable creation, redundant feature removal (matching ML 05 curriculum)
-- [ ] **INVX-03**: Skill uses stratified random sampling for train/test split (matching ML 06 curriculum)
-- [ ] **INVX-04**: Skill runs classification pipeline with cross-validation and hyperparameter grid search
-- [ ] **INVX-05**: Skill outputs confusion matrix, classification report, and feature importance — all with plain-English interpretation
-- [ ] **INVX-06**: User can input a new investor's data and get segment classification with explanation
+- [x] **INVX-01**: User can provide investor CSV file path; skill detects features and target column automatically
+- [x] **INVX-02**: Skill performs feature engineering: dummy variable creation, redundant feature removal (matching ML 05 curriculum)
+- [x] **INVX-03**: Skill uses stratified random sampling for train/test split (matching ML 06 curriculum)
+- [x] **INVX-04**: Skill runs classification pipeline with cross-validation and hyperparameter grid search
+- [x] **INVX-05**: Skill outputs confusion matrix, classification report, and feature importance — all with plain-English interpretation
+- [x] **INVX-06**: User can input a new investor's data and get segment classification with explanation
 
 ## Phase 4 Requirements (Web Publishing & Personas)
 
@@ -138,12 +138,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LQDX-04 | Phase 3 | Complete |
 | LQDX-05 | Phase 3 | Complete |
 | LQDX-06 | Phase 3 | Complete |
-| INVX-01 | Phase 3 | Pending |
-| INVX-02 | Phase 3 | Pending |
-| INVX-03 | Phase 3 | Pending |
-| INVX-04 | Phase 3 | Pending |
-| INVX-05 | Phase 3 | Pending |
-| INVX-06 | Phase 3 | Pending |
+| INVX-01 | Phase 3 | Complete |
+| INVX-02 | Phase 3 | Complete |
+| INVX-03 | Phase 3 | Complete |
+| INVX-04 | Phase 3 | Complete |
+| INVX-05 | Phase 3 | Complete |
+| INVX-06 | Phase 3 | Complete |
 | WEB-01 | Phase 4 | Pending |
 | WEB-02 | Phase 4 | Pending |
 | WEB-03 | Phase 4 | Pending |
