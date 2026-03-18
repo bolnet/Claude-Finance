@@ -9,10 +9,10 @@ Requirements for 5 remaining role-based walkthrough slash commands. Each follows
 
 ### Hedge Fund / Trading Desk
 
-- [ ] **HF-01**: User can run `/walkthrough-hedge-fund` for a multi-phase volatility regime and pair trading scenario
-- [ ] **HF-02**: Walkthrough covers volatility regime detection across market conditions
-- [ ] **HF-03**: Walkthrough covers cross-sector diversification analysis
-- [ ] **HF-04**: Walkthrough covers correlation-based pair identification
+- [x] **HF-01**: User can run `/walkthrough-hedge-fund` for a multi-phase volatility regime and pair trading scenario
+- [x] **HF-02**: Walkthrough covers volatility regime detection across market conditions
+- [x] **HF-03**: Walkthrough covers cross-sector diversification analysis
+- [x] **HF-04**: Walkthrough covers correlation-based pair identification
 
 ### Investment Banking
 
@@ -59,10 +59,10 @@ None — all 5 remaining walkthroughs scoped for this milestone.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| HF-01 | Phase 9 | Pending |
-| HF-02 | Phase 9 | Pending |
-| HF-03 | Phase 9 | Pending |
-| HF-04 | Phase 9 | Pending |
+| HF-01 | Phase 9 | Complete |
+| HF-02 | Phase 9 | Complete |
+| HF-03 | Phase 9 | Complete |
+| HF-04 | Phase 9 | Complete |
 | IB-01 | Phase 9 | Pending |
 | IB-02 | Phase 9 | Pending |
 | IB-03 | Phase 9 | Pending |

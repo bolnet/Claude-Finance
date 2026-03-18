@@ -52,7 +52,7 @@ Full phase details: `.planning/milestones/v1.1-ROADMAP.md`
   2. User can run `/walkthrough-investment-banking` and receive a comparable company analysis scenario covering 5-ticker comps with relative valuation framing and relative performance for deal pitch materials
   3. Both walkthroughs auto-run their MCP tool sequences without requiring additional user input per step
   4. Each walkthrough output includes plain-English interpretation with role-appropriate framing (trading desk language vs. deal pitch language)
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
 - [ ] 09-01-PLAN.md — Hedge Fund walkthrough: SKILL.md routing, walkthrough-hedge-fund.md scenario file, volatility/correlation tool sequence
@@ -112,7 +112,7 @@ Plans:
 | 6. Market Analysis Demos | v1.1 | 2/2 | Complete | 2026-03-18 |
 | 7. ML Workflow Demos | v1.1 | 3/3 | Complete | 2026-03-18 |
 | 8. Persona Demos | v1.1 | 2/2 | Complete | 2026-03-18 |
-| 9. Market-Analysis Walkthroughs | v1.2 | 0/2 | Planning complete | - |
+| 9. Market-Analysis Walkthroughs | 1/2 | In Progress|  | - |
 | 10. Data-Profiling Walkthroughs | v1.2 | 0/2 | Not started | - |
 | 11. ML-Classifier Walkthrough | v1.2 | 0/1 | Not started | - |
 | 12. Walkthrough Test Suite | v1.2 | 0/1 | Not started | - |

@@ -2,16 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.2
 milestone_name: Role Walkthroughs
-status: ready_to_plan
-stopped_at: Roadmap created — ready to plan Phase 9
-last_updated: "2026-03-18T21:30:00.000Z"
-last_activity: 2026-03-18 — v1.2 roadmap created (4 phases, 17 requirements mapped)
+status: planning
+stopped_at: Completed 09-01-PLAN.md
+last_updated: "2026-03-18T20:48:11.208Z"
+last_activity: 2026-03-18 — v1.2 roadmap created
 progress:
   total_phases: 4
   completed_phases: 0
-  total_plans: 6
-  completed_plans: 0
-  percent: 0
+  total_plans: 2
+  completed_plans: 1
 ---
 
 # Project State
@@ -54,6 +53,8 @@ v1.2 roadmap decisions:
 - Phase 11: PE standalone — ML classifier focus (investor classifier) warrants its own phase
 - Phase 12: TEST-01 as dedicated verification phase — tests all 5 walkthroughs together
 - No new Python code in v1.2 — all walkthroughs reuse existing 11 MCP tools
+- [Phase 09-market-analysis-walkthroughs]: Dynamic pair selection in walkthrough-hedge-fund: Steps 13-14 identify top cross-sector pair from Step 12 correlation matrix rather than hardcoding tickers
+- [Phase 09-market-analysis-walkthroughs]: Role Walkthroughs subsection in SKILL.md designed to scale — each future walkthrough adds one row without restructuring
 
 ### Pending Todos
 
@@ -65,6 +66,6 @@ None. Existing 11 MCP tools are fully functional. Equity research walkthrough pa
 
 ## Session Continuity
 
-Last session: 2026-03-18
-Stopped at: Roadmap created for v1.2, ready to plan Phase 9
+Last session: 2026-03-18T20:48:11.206Z
+Stopped at: Completed 09-01-PLAN.md
 Resume file: None
