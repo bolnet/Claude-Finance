@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.2
 milestone_name: Role Walkthroughs
 status: planning
-stopped_at: Completed 10-01-PLAN.md (FP&A Walkthrough)
-last_updated: "2026-03-18T21:11:09.359Z"
+stopped_at: Completed 11-01-PLAN.md (Private Equity Walkthrough)
+last_updated: "2026-03-18T21:38:13.842Z"
 last_activity: 2026-03-18 — v1.2 roadmap created
 progress:
   total_phases: 4
-  completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
+  completed_phases: 3
+  total_plans: 5
+  completed_plans: 5
 ---
 
 # Project State
@@ -58,6 +58,8 @@ v1.2 roadmap decisions:
 - [Phase 09-market-analysis-walkthroughs]: IB comps: MSFT/GOOGL/AMZN/CRM/ORCL for cloud/tech M&A deal pitch; Exhibit A/B/C/D naming matches pitch book conventions
 - [Phase 10-data-profiling-walkthroughs]: investor_classifier reframed as anomaly detection / misclassification detector for accounting walkthrough — no new code, reused existing MCP tool with controller framing
 - [Phase 10-data-profiling-walkthroughs]: FP&A walkthrough uses 4-phase structure with pure analysis steps for ERP data quality report, feature-to-budget mapping, and three-scenario budget synthesis
+- [Phase 11-ml-classifier-walkthrough]: PE/VC reframing: investor_classifier confidence scores serve dual purpose — prospect IC conviction level and portfolio thesis drift signal
+- [Phase 11-ml-classifier-walkthrough]: walkthrough-private-equity completes 6th and final role-based walkthrough in v1.2 Role Walkthroughs milestone
 
 ### Pending Todos
 
@@ -69,6 +71,6 @@ None. Existing 11 MCP tools are fully functional. Equity research walkthrough pa
 
 ## Session Continuity
 
-Last session: 2026-03-18T21:08:28.893Z
-Stopped at: Completed 10-01-PLAN.md (FP&A Walkthrough)
+Last session: 2026-03-18T21:38:13.840Z
+Stopped at: Completed 11-01-PLAN.md (Private Equity Walkthrough)
 Resume file: None

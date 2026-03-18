@@ -28,9 +28,9 @@ Requirements for 5 remaining role-based walkthrough slash commands. Each follows
 
 ### Private Equity / VC
 
-- [ ] **PE-01**: User can run `/walkthrough-private-equity` for a due diligence and portfolio monitoring scenario
-- [ ] **PE-02**: Walkthrough covers due diligence scoring using investor classifier
-- [ ] **PE-03**: Walkthrough covers multi-prospect comparison and portfolio company monitoring
+- [x] **PE-01**: User can run `/walkthrough-private-equity` for a due diligence and portfolio monitoring scenario
+- [x] **PE-02**: Walkthrough covers due diligence scoring using investor classifier
+- [x] **PE-03**: Walkthrough covers multi-prospect comparison and portfolio company monitoring
 
 ### Accounting / Controller
 
@@ -69,9 +69,9 @@ None — all 5 remaining walkthroughs scoped for this milestone.
 | FPA-01 | Phase 10 | Complete |
 | FPA-02 | Phase 10 | Complete |
 | FPA-03 | Phase 10 | Complete |
-| PE-01 | Phase 11 | Pending |
-| PE-02 | Phase 11 | Pending |
-| PE-03 | Phase 11 | Pending |
+| PE-01 | Phase 11 | Complete |
+| PE-02 | Phase 11 | Complete |
+| PE-03 | Phase 11 | Complete |
 | ACCT-01 | Phase 10 | Complete |
 | ACCT-02 | Phase 10 | Complete |
 | ACCT-03 | Phase 10 | Complete |

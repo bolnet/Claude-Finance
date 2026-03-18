@@ -38,7 +38,7 @@ Full phase details: `.planning/milestones/v1.1-ROADMAP.md`
 
 - [x] **Phase 9: Market-Analysis Walkthroughs** — Hedge Fund and Investment Banking walkthroughs using volatility, correlation, and comparison tools (completed 2026-03-18)
 - [x] **Phase 10: Data-Profiling Walkthroughs** — FP&A and Accounting walkthroughs using CSV ingestion, data profiling, and liquidity predictor (completed 2026-03-18)
-- [ ] **Phase 11: ML-Classifier Walkthrough** — Private Equity walkthrough using investor classifier for due diligence scoring
+- [x] **Phase 11: ML-Classifier Walkthrough** — Private Equity walkthrough using investor classifier for due diligence scoring (completed 2026-03-18)
 - [ ] **Phase 12: Walkthrough Test Suite** — Dedicated test files for all 5 walkthroughs validating structure, phases, and MCP tool coverage
 
 ## Phase Details
@@ -81,7 +81,7 @@ Plans:
   1. User can run `/walkthrough-private-equity` and receive a multi-phase due diligence scenario that uses the investor classifier to score prospects
   2. Walkthrough covers multi-prospect comparison (side-by-side scoring) and portfolio company monitoring output
   3. Output interprets classifier results in PE/VC framing (investment thesis language, portfolio risk language) rather than generic ML output
-**Plans:** 1 plan
+**Plans:** 1/1 plans complete
 
 Plans:
 - [ ] 11-01-PLAN.md — Private Equity walkthrough: walkthrough-private-equity.md scenario file, investor classifier due diligence sequence
@@ -114,7 +114,7 @@ Plans:
 | 8. Persona Demos | v1.1 | 2/2 | Complete | 2026-03-18 |
 | 9. Market-Analysis Walkthroughs | v1.2 | 2/2 | Complete | 2026-03-18 |
 | 10. Data-Profiling Walkthroughs | v1.2 | 2/2 | Complete | 2026-03-18 |
-| 11. ML-Classifier Walkthrough | v1.2 | 0/1 | Not started | - |
+| 11. ML-Classifier Walkthrough | 1/1 | Complete   | 2026-03-18 | - |
 | 12. Walkthrough Test Suite | v1.2 | 0/1 | Not started | - |
 
 ---
