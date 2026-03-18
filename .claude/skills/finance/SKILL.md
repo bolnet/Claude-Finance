@@ -30,12 +30,24 @@ Classify every finance request into one of these intents before taking action:
 | `ml-liquidity` | "liquidity model", "liquidity predictor", "regression on CSV", "predict liquidity risk" | CSV ingestion; sklearn regression pipeline |
 | `ml-investor` | "investor classifier", "segment investors", "classify investors", "investor profiling" | CSV ingestion; sklearn classification pipeline |
 | `demo` | "demo", "walkthrough", "show me everything", "guided tour", "what can you do" | Direct user to run `/demo` command for a guided walkthrough of all capabilities |
+| `walkthrough-hedge-fund` | "hedge fund walkthrough", "trading desk analysis", "volatility regime", "pair trading walkthrough" | Direct user to run `/walkthrough-hedge-fund` command for a hedge fund trading desk scenario |
 
 If the intent is ambiguous, ask one clarifying question. Do not generate code before clarifying.
 
 ### Demo Mode
 
 The `/demo` command runs a guided walkthrough of all 11 tools. It is self-contained and requires no arguments. If a user asks "what can you do" or "show me a demo", direct them to type `/demo`.
+
+### Role Walkthroughs
+
+Role-specific walkthroughs provide deep, multi-phase scenarios for finance professionals. Each is self-contained and auto-running.
+
+| Command | Role | Scenario |
+|---------|------|----------|
+| `/walkthrough-equity-research` | Sell-side analyst | Coverage initiation with peer comps and risk profiling |
+| `/walkthrough-hedge-fund` | Quant PM / trading desk | Volatility regime detection, cross-sector diversification, pair trading |
+
+If a user asks for a "hedge fund walkthrough", "trading desk analysis", "volatility regime walkthrough", or "pair trading scenario", direct them to type `/walkthrough-hedge-fund`.
 
 ---
 
