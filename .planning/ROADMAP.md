@@ -65,12 +65,12 @@ Plans:
   2. User sees `ingest_csv` run on the sample CSV and receives cleaning/EDA output with explanation
   3. User sees `predict_liquidity` (train + predict cycle) produce regression results with RMSE/R² explained in plain English
   4. User sees `classify_investor` (train + predict cycle) produce classification results with segment label and feature importance explained in plain English
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 07-01: Bundled sample CSV — create `demo/sample_portfolio.csv` with realistic synthetic data matching ML tool schemas
-- [ ] 07-02: ML demo steps — four tool invocations on sample CSV, explanation text per tool
-- [ ] 07-03: Demo verification — all 4 ML tools run end-to-end in demo flow without error
+- [ ] 07-01-PLAN.md — Bundled sample CSV with schema tests matching liquidity and investor model columns
+- [ ] 07-02-PLAN.md — Integration tests proving all 4 ML tools work with sample CSV using demo.md parameters
+- [ ] 07-03-PLAN.md — Fix demo.md parameter mismatches and human verification of Steps 9-11
 
 ### Phase 8: Persona Demos
 **Goal**: Users see the same analysis delivered through both the equity analyst and portfolio manager personas and understand how the framing differs
@@ -100,4 +100,4 @@ Plans:
 | 8. Persona Demos | v1.1 | 0/2 | Not started | - |
 
 ---
-*Last updated: 2026-03-18 — Phase 6 plans created*
+*Last updated: 2026-03-18 — Phase 7 plans created*
