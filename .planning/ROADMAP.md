@@ -2,26 +2,35 @@
 
 ## Overview
 
-Build a Claude Code native `/finance` slash command that lets finance professionals describe what they need in plain English and receive executed Python analysis — no coding required. The work flows in three natural delivery boundaries dictated by the dependency graph: first, lay the data-correct infrastructure that all workflows share; second, build the live-market analysis workflows that prove the write-then-execute pattern; third, implement the ML workflows (liquidity predictor and investor classifier) that complete the pyfi.com curriculum scope and deliver the primary competitive differentiators.
+Build a finance AI skill that works in both Claude Code (terminal) and claude.ai (browser) via an MCP server architecture. Finance professionals describe what they need in plain English and receive executed Python analysis — no coding required. The MCP server is the core engine; the Claude Code slash command and claude.ai plugin are thin interfaces on top of it. Work flows in four delivery boundaries: infrastructure + MCP scaffold → market analysis tools → ML workflow tools → web publishing, persona variants, and marketplace submission.
+
+## Interfaces
+
+| Interface | Who Uses It | How |
+|-----------|------------|-----|
+| Claude Code `/finance` command | Power users, developers | Terminal slash command |
+| claude.ai browser plugin | All finance professionals | Chat at claude.ai |
+| MCP server (shared engine) | Both above | Python finance engine |
 
 ## Phases
 
 **Phase Numbering:**
-- Integer phases (1, 2, 3): Planned milestone work
+- Integer phases (1, 2, 3, 4): Planned milestone work
 - Decimal phases (2.1, 2.2): Urgent insertions (marked with INSERTED)
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Infrastructure & Skill Scaffold** - Data-correct foundation, environment validation, output conventions, and slash command skeleton that all workflows depend on
-- [ ] **Phase 2: Market Analysis Workflows** - Live stock analysis via yfinance — price charts, returns, volatility, risk metrics, multi-ticker comparison, correlation heatmap
-- [ ] **Phase 3: ML Workflows** - Liquidity predictor (regression, ML 03) and investor classifier (classification, ML 05-06) on user-provided CSV data
+- [ ] **Phase 1: Infrastructure & MCP Scaffold** - MCP server foundation, data adapter, output conventions, Claude Code command wrapper, and environment validation
+- [ ] **Phase 2: Market Analysis Tools** - Live stock analysis via yfinance — price charts, returns, volatility, risk metrics, multi-ticker comparison, correlation heatmap — as MCP tools
+- [ ] **Phase 3: ML Workflow Tools** - Liquidity predictor (regression, ML 03) and investor classifier (classification, ML 05-06) as MCP tools on user-provided CSV data
+- [ ] **Phase 4: Web Publishing & Personas** - claude.ai plugin packaging, marketplace submission, analyst/PM-trader persona variants
 
 ## Phase Details
 
-### Phase 1: Infrastructure & Skill Scaffold
-**Goal**: The `/finance` command exists, connects to the Python environment, fetches adjusted price data correctly, writes results to the output directory, and surfaces user-friendly errors with a mandatory disclaimer on all outputs
+### Phase 1: Infrastructure & MCP Scaffold
+**Goal**: MCP server exists and is connectable, `/finance` Claude Code command works, Python environment validated, yfinance adapter correct, output conventions established, disclaimer on all outputs
 **Depends on**: Nothing (first phase)
-**Requirements**: INFRA-01, INFRA-02, INFRA-03, INFRA-04, INFRA-05, INFRA-06, INFRA-07, CMD-01, CMD-02, CMD-03, CMD-04
+**Requirements**: INFRA-01, INFRA-02, INFRA-03, INFRA-04, INFRA-05, INFRA-06, INFRA-07, CMD-01, CMD-02, CMD-03, CMD-04, MCP-01, MCP-02, MCP-03
 **Success Criteria** (what must be TRUE):
   1. Running `/finance` in Claude Code produces a response (not an error) and Claude can introspect the local Python environment before generating any code
   2. The yfinance adapter fetches `Adj Close` data (never raw `Close`) and raises a user-readable error if the ticker is invalid, the date range is empty, or the DataFrame is empty
@@ -31,12 +40,12 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: TBD
 
 Plans:
-- [ ] 01-01: Command file, skill scaffold, and environment context injection
+- [ ] 01-01: MCP server scaffold (Python FastMCP server, tool registration, stdio transport)
 - [ ] 01-02: yfinance adapter layer, data validation wrapper, and output directory setup
-- [ ] 01-03: Output formatting conventions — disclaimer template, plain-English header, chart save pattern
+- [ ] 01-03: Claude Code command file + SKILL.md + output formatting conventions (disclaimer, plain-English header, chart save pattern)
 
-### Phase 2: Market Analysis Workflows
-**Goal**: Users can request stock analysis in plain English and receive price charts, return metrics, risk statistics, multi-ticker comparisons, and correlation heatmaps — all with plain-English interpretation and no Python knowledge required
+### Phase 2: Market Analysis Tools
+**Goal**: Users (in Claude Code or claude.ai) can request stock analysis in plain English and receive price charts, return metrics, risk statistics, multi-ticker comparisons, and correlation heatmaps — all with plain-English interpretation
 **Depends on**: Phase 1
 **Requirements**: MKTX-01, MKTX-02, MKTX-03, MKTX-04, MKTX-05, MKTX-06, MKTX-07
 **Success Criteria** (what must be TRUE):
@@ -48,12 +57,12 @@ Plans:
 **Plans**: TBD
 
 Plans:
-- [ ] 02-01: Intent routing in SKILL.md for market analysis task type + stock price chart workflow
-- [ ] 02-02: Returns, volatility, and risk metrics workflows (Sharpe, drawdown, beta)
-- [ ] 02-03: Multi-ticker comparison and correlation heatmap workflows
+- [ ] 02-01: MCP tool `analyze_stock` — price chart, intent routing for market analysis requests
+- [ ] 02-02: MCP tools `get_returns`, `get_volatility`, `get_risk_metrics` — returns, volatility, Sharpe, drawdown, beta
+- [ ] 02-03: MCP tools `compare_tickers`, `correlation_map` — multi-ticker comparison and heatmap
 
-### Phase 3: ML Workflows
-**Goal**: Users can point the skill at a CSV file and receive a trained, evaluated liquidity risk regression model or an investor segment classifier — with plain-English interpretation of every model metric and a prediction interface for new data
+### Phase 3: ML Workflow Tools
+**Goal**: Users can point the tool at a CSV file and receive a trained, evaluated liquidity risk regression model or investor segment classifier — with plain-English interpretation and prediction interface for new data
 **Depends on**: Phase 2
 **Requirements**: LQDX-01, LQDX-02, LQDX-03, LQDX-04, LQDX-05, LQDX-06, INVX-01, INVX-02, INVX-03, INVX-04, INVX-05, INVX-06
 **Success Criteria** (what must be TRUE):
@@ -66,18 +75,34 @@ Plans:
 **Plans**: TBD
 
 Plans:
-- [ ] 03-01: CSV ingestion, EDA pipeline, and data cleaning workflows (shared by both ML tasks)
-- [ ] 03-02: Liquidity predictor — regression pipeline, train/test split enforcement, evaluation outputs
-- [ ] 03-03: Investor classifier — feature engineering, stratified split, classification pipeline, hyperparameter search
-- [ ] 03-04: Prediction interfaces for new data — liquidity client prediction and investor segment classification
+- [ ] 03-01: CSV ingestion, EDA pipeline, and data cleaning (shared MCP tool `ingest_csv`)
+- [ ] 03-02: MCP tool `liquidity_predictor` — regression pipeline, split-before-fit enforcement, evaluation outputs
+- [ ] 03-03: MCP tool `investor_classifier` — feature engineering, stratified split, cross-validation, hyperparameter search
+- [ ] 03-04: MCP tools `predict_liquidity`, `classify_investor` — prediction interfaces for new data
+
+### Phase 4: Web Publishing & Personas
+**Goal**: Finance professionals can use the skill at claude.ai in their browser; analyst and PM/trader persona variants ship; skill is packaged for the Claude plugin marketplace
+**Depends on**: Phase 3
+**Requirements**: PERS-01, PERS-02, WEB-01, WEB-02, WEB-03
+**Success Criteria** (what must be TRUE):
+  1. A finance professional with no Claude Code install can connect the MCP server to claude.ai and use all tools via chat
+  2. `/finance-analyst` variant emphasizes stock analysis and peer comparison in its responses
+  3. `/finance-pm` variant emphasizes portfolio risk/return attribution in its responses
+  4. The MCP server is packaged and documented for marketplace submission
+
+Plans:
+- [ ] 04-01: claude.ai MCP integration — remote transport, server packaging, connection guide for non-technical users
+- [ ] 04-02: Analyst persona variant (`.claude/commands/finance-analyst.md`) + PM/trader variant (`finance-pm.md`)
+- [ ] 04-03: Marketplace packaging — README, screenshots, install instructions, listing metadata
 
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3
+Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Infrastructure & Skill Scaffold | 0/3 | Not started | - |
-| 2. Market Analysis Workflows | 0/3 | Not started | - |
-| 3. ML Workflows | 0/4 | Not started | - |
+| 1. Infrastructure & MCP Scaffold | 0/3 | Not started | - |
+| 2. Market Analysis Tools | 0/3 | Not started | - |
+| 3. ML Workflow Tools | 0/4 | Not started | - |
+| 4. Web Publishing & Personas | 0/3 | Not started | - |

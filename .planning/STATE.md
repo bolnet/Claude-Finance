@@ -5,14 +5,14 @@
 See: .planning/PROJECT.md (updated 2026-03-17)
 
 **Core value:** Finance professionals get professional-grade analysis by describing what they want — the skill writes, runs, and interprets the code for them.
-**Current focus:** Phase 1 - Infrastructure & Skill Scaffold
+**Current focus:** Phase 1 - Infrastructure & MCP Scaffold
 
 ## Current Position
 
-Phase: 1 of 3 (Infrastructure & Skill Scaffold)
+Phase: 1 of 4 (Infrastructure & MCP Scaffold)
 Plan: 0 of 3 in current phase
 Status: Ready to plan
-Last activity: 2026-03-17 — Roadmap created; all 30 v1 requirements mapped to 3 phases
+Last activity: 2026-03-17 — Roadmap updated to 4 phases with MCP server architecture; 38 v1 requirements mapped
 
 Progress: [░░░░░░░░░░] 0%
 

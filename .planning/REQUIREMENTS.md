@@ -17,10 +17,16 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **INFRA-06**: Data validation wrapper catches empty DataFrames, invalid tickers, bad date ranges, and returns user-friendly error messages
 - [ ] **INFRA-07**: All output leads with plain-English interpretation before any DataFrame, chart path, or model metric
 
+### MCP Server (Core Engine)
+
+- [ ] **MCP-01**: Python MCP server exists at `src/finance_mcp/server.py` using FastMCP, registered in `.claude/mcp_servers.json` for Claude Code
+- [ ] **MCP-02**: MCP server exposes tools with clear descriptions that Claude (Code or claude.ai) can discover and invoke via natural language
+- [ ] **MCP-03**: MCP server runs via `stdio` transport locally (Claude Code) and is prepared for remote transport packaging (Phase 4)
+
 ### Command & Skill Structure
 
 - [ ] **CMD-01**: `/finance` slash command file exists at `.claude/commands/finance.md` with correct frontmatter (allowed-tools, description, argument-hint)
-- [ ] **CMD-02**: Finance SKILL.md exists at `.claude/skills/finance/SKILL.md` with intent classification logic for routing requests to correct workflow
+- [ ] **CMD-02**: Finance SKILL.md exists at `.claude/skills/finance/SKILL.md` with intent classification logic for routing requests to MCP tools
 - [ ] **CMD-03**: Command uses dynamic context injection (`!ls`, `!python3 --version`, `!pip list`) before code generation to produce runnable scripts
 - [ ] **CMD-04**: Python scripts are written to disk first (Write tool), then executed (Bash tool) — not inline `python3 -c` strings
 
@@ -52,14 +58,27 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **INVX-05**: Skill outputs confusion matrix, classification report, and feature importance — all with plain-English interpretation
 - [ ] **INVX-06**: User can input a new investor's data and get segment classification with explanation
 
-## v2 Requirements
+## Phase 4 Requirements (Web Publishing & Personas)
 
-Deferred to Phase 4 / future milestone. Tracked but not in current roadmap.
+In v1 roadmap but delivered last.
+
+### Web Access
+
+- [ ] **WEB-01**: Finance professional with no Claude Code install can connect MCP server to claude.ai and use all tools via browser chat
+- [ ] **WEB-02**: MCP server packaged with connection guide for non-technical users (no terminal knowledge required to connect)
+- [ ] **WEB-03**: Skill listed and documented for Claude plugin marketplace submission
 
 ### Persona Variants
 
-- **PERS-01**: `/finance-analyst` command — equity-focused variant with stock analysis, peer comparison, valuation ratios emphasis
-- **PERS-02**: `/finance-pm` command — portfolio manager variant with risk/return attribution, portfolio-level metrics
+- [ ] **PERS-01**: `/finance-analyst` command — equity-focused variant (stock analysis, peer comparison, valuation ratios emphasis)
+- [ ] **PERS-02**: `/finance-pm` command — portfolio manager variant (risk/return attribution, portfolio-level metrics)
+
+## v2 Requirements
+
+Deferred to future milestone.
+
+### Extended Persona
+
 - **PERS-03**: Persona detection via conversation context (no explicit command needed)
 
 ### Extended Data Sources
@@ -99,6 +118,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-05 | Phase 1 | Pending |
 | INFRA-06 | Phase 1 | Pending |
 | INFRA-07 | Phase 1 | Pending |
+| MCP-01 | Phase 1 | Pending |
+| MCP-02 | Phase 1 | Pending |
+| MCP-03 | Phase 1 | Pending |
 | CMD-01 | Phase 1 | Pending |
 | CMD-02 | Phase 1 | Pending |
 | CMD-03 | Phase 1 | Pending |
@@ -122,10 +144,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INVX-04 | Phase 3 | Pending |
 | INVX-05 | Phase 3 | Pending |
 | INVX-06 | Phase 3 | Pending |
+| WEB-01 | Phase 4 | Pending |
+| WEB-02 | Phase 4 | Pending |
+| WEB-03 | Phase 4 | Pending |
+| PERS-01 | Phase 4 | Pending |
+| PERS-02 | Phase 4 | Pending |
 
 **Coverage:**
-- v1 requirements: 30 total
-- Mapped to phases: 30
+- v1 requirements: 38 total
+- Mapped to phases: 38
 - Unmapped: 0 ✓
 
 ---
