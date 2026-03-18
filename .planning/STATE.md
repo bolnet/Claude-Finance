@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Completed 02-02-PLAN.md
-last_updated: "2026-03-18T01:52:32.102Z"
+stopped_at: Completed 02-03-PLAN.md
+last_updated: "2026-03-18T01:54:43.656Z"
 last_activity: "2026-03-18 — 01-03 complete: /finance command verified, finance MCP server connected, all packages OK"
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 7
-  completed_plans: 5
+  completed_plans: 6
   percent: 67
 ---
 
@@ -54,6 +54,7 @@ Progress: [███████░░░] 67%
 | Phase 01-infrastructure-mcp-scaffold P03 | 2 | 2 tasks | 2 files |
 | Phase 02-market-analysis-tools P01 | 2 | 2 tasks | 4 files |
 | Phase 02-market-analysis-tools P02 | 4 | 2 tasks | 5 files |
+| Phase 02-market-analysis-tools P03 | 5 min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -78,6 +79,8 @@ Recent decisions affecting current work:
 - [Phase 02-market-analysis-tools]: _compute_risk_metrics exposed as public function — allows direct unit testing of Sharpe/drawdown/beta math without mocking fetch_price_history or the full tool I/O
 - [Phase 02-market-analysis-tools]: Sharpe ratio computed with rf=0; FRED integration deferred and noted in output text as future enhancement
 - [Phase 02-market-analysis-tools]: get_risk_metrics fetches ^GSPC benchmark via same fetch_price_history adapter — reuses existing validation and DataFetchError handling
+- [Phase 02-market-analysis-tools]: Import seaborn inside correlation_map function body — ensures output.py has set Agg backend before seaborn loads
+- [Phase 02-market-analysis-tools]: Correlation computed on pct_change().dropna() not raw prices — return-based correlation avoids spurious correlations from shared price trends
 
 ### Pending Todos
 
@@ -91,6 +94,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-18T01:52:32.099Z
-Stopped at: Completed 02-02-PLAN.md
+Last session: 2026-03-18T01:54:43.653Z
+Stopped at: Completed 02-03-PLAN.md
 Resume file: None

@@ -33,11 +33,11 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Market Analysis
 
 - [x] **MKTX-01**: User can request stock price chart for any ticker and date range in plain English; chart saved as PNG
-- [ ] **MKTX-02**: User can get daily and cumulative returns for a ticker, displayed as table and chart
-- [ ] **MKTX-03**: User can get annualized volatility and rolling volatility chart for a ticker
-- [ ] **MKTX-04**: User can get Sharpe ratio and basic risk metrics (max drawdown, beta vs S&P 500) for a ticker
-- [ ] **MKTX-05**: User can compare multiple tickers (2-5) side-by-side on price performance chart
-- [ ] **MKTX-06**: User can get correlation heatmap between a set of tickers
+- [x] **MKTX-02**: User can get daily and cumulative returns for a ticker, displayed as table and chart
+- [x] **MKTX-03**: User can get annualized volatility and rolling volatility chart for a ticker
+- [x] **MKTX-04**: User can get Sharpe ratio and basic risk metrics (max drawdown, beta vs S&P 500) for a ticker
+- [x] **MKTX-05**: User can compare multiple tickers (2-5) side-by-side on price performance chart
+- [x] **MKTX-06**: User can get correlation heatmap between a set of tickers
 - [x] **MKTX-07**: All market analysis outputs include plain-English summary (e.g., "AAPL had annualized volatility of 24%, which is higher than the S&P 500 average of ~15%")
 
 ### Liquidity Predictor (ML 03 Curriculum)
@@ -126,11 +126,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CMD-03 | Phase 1 | Complete |
 | CMD-04 | Phase 1 | Complete |
 | MKTX-01 | Phase 2 | Complete |
-| MKTX-02 | Phase 2 | Pending |
-| MKTX-03 | Phase 2 | Pending |
-| MKTX-04 | Phase 2 | Pending |
-| MKTX-05 | Phase 2 | Pending |
-| MKTX-06 | Phase 2 | Pending |
+| MKTX-02 | Phase 2 | Complete |
+| MKTX-03 | Phase 2 | Complete |
+| MKTX-04 | Phase 2 | Complete |
+| MKTX-05 | Phase 2 | Complete |
+| MKTX-06 | Phase 2 | Complete |
 | MKTX-07 | Phase 2 | Complete |
 | LQDX-01 | Phase 3 | Pending |
 | LQDX-02 | Phase 3 | Pending |
