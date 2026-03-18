@@ -37,7 +37,7 @@ Full phase details: `.planning/milestones/v1.1-ROADMAP.md`
 **Milestone Goal:** Build 5 remaining role-based walkthrough slash commands, each a deep multi-phase scenario simulating real finance workflows using the existing 11 MCP tools.
 
 - [x] **Phase 9: Market-Analysis Walkthroughs** — Hedge Fund and Investment Banking walkthroughs using volatility, correlation, and comparison tools (completed 2026-03-18)
-- [ ] **Phase 10: Data-Profiling Walkthroughs** — FP&A and Accounting walkthroughs using CSV ingestion, data profiling, and liquidity predictor
+- [x] **Phase 10: Data-Profiling Walkthroughs** — FP&A and Accounting walkthroughs using CSV ingestion, data profiling, and liquidity predictor (completed 2026-03-18)
 - [ ] **Phase 11: ML-Classifier Walkthrough** — Private Equity walkthrough using investor classifier for due diligence scoring
 - [ ] **Phase 12: Walkthrough Test Suite** — Dedicated test files for all 5 walkthroughs validating structure, phases, and MCP tool coverage
 
@@ -67,7 +67,7 @@ Plans:
   2. User can run `/walkthrough-accounting` and receive a scenario covering transaction data profiling via CSV ingestion and anomaly detection prep with ERP consolidation patterns
   3. Both walkthroughs use the bundled sample CSV (no user data required) and complete without manual intervention
   4. Output shows data profiling results and ML forecasting interpretation in role-appropriate language (budget variance framing vs. controller/audit framing)
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 
 Plans:
 - [ ] 10-01-PLAN.md — FP&A walkthrough: walkthrough-fpa.md scenario file, CSV profiling + liquidity predictor tool sequence
@@ -113,7 +113,7 @@ Plans:
 | 7. ML Workflow Demos | v1.1 | 3/3 | Complete | 2026-03-18 |
 | 8. Persona Demos | v1.1 | 2/2 | Complete | 2026-03-18 |
 | 9. Market-Analysis Walkthroughs | v1.2 | 2/2 | Complete | 2026-03-18 |
-| 10. Data-Profiling Walkthroughs | v1.2 | 0/2 | Not started | - |
+| 10. Data-Profiling Walkthroughs | 2/2 | Complete   | 2026-03-18 | - |
 | 11. ML-Classifier Walkthrough | v1.2 | 0/1 | Not started | - |
 | 12. Walkthrough Test Suite | v1.2 | 0/1 | Not started | - |
 

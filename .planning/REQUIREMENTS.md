@@ -34,9 +34,9 @@ Requirements for 5 remaining role-based walkthrough slash commands. Each follows
 
 ### Accounting / Controller
 
-- [ ] **ACCT-01**: User can run `/walkthrough-accounting` for a transaction profiling and anomaly detection scenario
-- [ ] **ACCT-02**: Walkthrough covers transaction data profiling via CSV ingestion
-- [ ] **ACCT-03**: Walkthrough covers anomaly detection prep and ERP consolidation patterns
+- [x] **ACCT-01**: User can run `/walkthrough-accounting` for a transaction profiling and anomaly detection scenario
+- [x] **ACCT-02**: Walkthrough covers transaction data profiling via CSV ingestion
+- [x] **ACCT-03**: Walkthrough covers anomaly detection prep and ERP consolidation patterns
 
 ### Testing
 
@@ -72,9 +72,9 @@ None — all 5 remaining walkthroughs scoped for this milestone.
 | PE-01 | Phase 11 | Pending |
 | PE-02 | Phase 11 | Pending |
 | PE-03 | Phase 11 | Pending |
-| ACCT-01 | Phase 10 | Pending |
-| ACCT-02 | Phase 10 | Pending |
-| ACCT-03 | Phase 10 | Pending |
+| ACCT-01 | Phase 10 | Complete |
+| ACCT-02 | Phase 10 | Complete |
+| ACCT-03 | Phase 10 | Complete |
 | TEST-01 | Phase 12 | Pending |
 
 **Coverage:**
