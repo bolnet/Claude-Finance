@@ -164,6 +164,29 @@ Translate technical errors to plain English. Never show raw tracebacks.
 
 ---
 
+## ML Workflow Tools
+
+These five tools power the ML workflow pipeline. Route user requests to these tools based on intent.
+
+> **Note:** ML tools require a CSV file path the user provides at runtime. Course CSV files
+> (liquidity_data.csv, investor_data.csv) must be placed at the path the user specifies —
+> they are not bundled with the skill.
+
+| Tool | Signature | When to Use | Routing Keywords |
+|------|-----------|-------------|-----------------|
+| `ingest_csv` | `ingest_csv(csv_path, target_column?)` | User wants to explore a CSV, detect columns, or get summary stats before modeling | "explore csv", "what's in this file", "data summary", "clean my data" |
+| `liquidity_predictor` | `liquidity_predictor(csv_path, target_column?)` | User wants to build a liquidity risk regression model from a CSV | "predict liquidity", "liquidity model", "train regression", "liquidity risk from CSV" |
+| `predict_liquidity` | `predict_liquidity(credit_score, debt_ratio, region)` | User has a trained liquidity model and wants to score a new client | "predict for client", "score this customer", "liquidity score for" |
+| `investor_classifier` | `investor_classifier(csv_path, target_column?)` | User wants to classify investors into segments from a CSV | "classify investors", "investor segments", "train classifier", "segment from CSV" |
+| `classify_investor` | `classify_investor(age, income, risk_tolerance, product_preference)` | User wants to classify a single new investor | "what segment is this client", "classify investor", "investor type" |
+
+**Sequencing rules:**
+- Always call `liquidity_predictor` before `predict_liquidity` (model must be trained first).
+- Always call `investor_classifier` before `classify_investor` (model must be trained first).
+- Use `ingest_csv` when the user wants to explore data before committing to a modeling workflow.
+
+---
+
 ## Data Architecture Notes
 
 For generated scripts, use this import block as a starting template:
