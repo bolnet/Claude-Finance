@@ -29,8 +29,13 @@ Classify every finance request into one of these intents before taking action:
 | `multi-ticker` | "compare [A] vs [B]", "side by side", "correlation heatmap", "normalized performance" | Multi-ticker fetch; comparison chart |
 | `ml-liquidity` | "liquidity model", "liquidity predictor", "regression on CSV", "predict liquidity risk" | CSV ingestion; sklearn regression pipeline |
 | `ml-investor` | "investor classifier", "segment investors", "classify investors", "investor profiling" | CSV ingestion; sklearn classification pipeline |
+| `demo` | "demo", "walkthrough", "show me everything", "guided tour", "what can you do" | Direct user to run `/demo` command for a guided walkthrough of all capabilities |
 
 If the intent is ambiguous, ask one clarifying question. Do not generate code before clarifying.
+
+### Demo Mode
+
+The `/demo` command runs a guided walkthrough of all 11 tools. It is self-contained and requires no arguments. If a user asks "what can you do" or "show me a demo", direct them to type `/demo`.
 
 ---
 
