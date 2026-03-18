@@ -32,9 +32,9 @@ Requirements for the interactive demo milestone. Each maps to roadmap phases.
 
 ### Persona Demos
 
-- [ ] **PERS-01**: Demo runs an analysis through `/finance-analyst` persona framing
-- [ ] **PERS-02**: Demo runs the same analysis through `/finance-pm` persona framing
-- [ ] **PERS-03**: Demo highlights the difference in framing between the two personas
+- [x] **PERS-01**: Demo runs an analysis through `/finance-analyst` persona framing
+- [x] **PERS-02**: Demo runs the same analysis through `/finance-pm` persona framing
+- [x] **PERS-03**: Demo highlights the difference in framing between the two personas
 
 ## Future Requirements
 
@@ -73,9 +73,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | MLWF-02 | Phase 7 | Complete |
 | MLWF-03 | Phase 7 | Complete |
 | MLWF-04 | Phase 7 | Complete |
-| PERS-01 | Phase 8 | Pending |
-| PERS-02 | Phase 8 | Pending |
-| PERS-03 | Phase 8 | Pending |
+| PERS-01 | Phase 8 | Complete |
+| PERS-02 | Phase 8 | Complete |
+| PERS-03 | Phase 8 | Complete |
 
 **Coverage:**
 - v1.1 requirements: 17 total

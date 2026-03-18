@@ -97,7 +97,7 @@ Plans:
 | 5. Demo Command & Flow | v1.1 | 2/2 | Complete | 2026-03-18 |
 | 6. Market Analysis Demos | 2/2 | Complete   | 2026-03-18 | - |
 | 7. ML Workflow Demos | 3/3 | Complete   | 2026-03-18 | - |
-| 8. Persona Demos | v1.1 | 0/2 | Not started | - |
+| 8. Persona Demos | 1/2 | In Progress|  | - |
 
 ---
 *Last updated: 2026-03-18 — Phase 8 plans created*
