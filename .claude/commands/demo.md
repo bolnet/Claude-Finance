@@ -197,19 +197,60 @@ After running (if not skipped):
 
 ---
 
-## Persona Showcase
+## Step 12: Equity Analyst Framing — get_risk_metrics
 
-The Finance AI Skill also includes two persona modes that frame the same underlying analysis differently, depending on your role:
+Call the MCP tool `get_risk_metrics` with:
+- ticker: "AAPL"
+- start: [1 year before today, in YYYY-MM-DD format]
 
-- **/finance-analyst** — Equity analyst lens. Leads with Sharpe ratio and drawdown versus the S&P 500. Useful for single-stock coverage research, earnings context, and client-facing reports.
-
-- **/finance-pm** — Portfolio manager lens. Leads with drawdown and beta before Sharpe ratio, and treats tickers as portfolio holdings rather than individual securities. Useful for risk management, allocation decisions, and portfolio review.
-
-To try a persona, type `/finance-analyst` or `/finance-pm` followed by your analysis request (e.g., `/finance-analyst Show me AAPL risk metrics for 2024`).
+After running, explain the results using the equity analyst persona framing:
+- Lead with: "From an equity perspective..."
+- Emphasize Sharpe ratio first as the primary measure of risk-adjusted return quality
+- Then discuss max drawdown as the worst peak-to-trough decline
+- Frame beta as sensitivity to market moves
+- Express performance relative to S&P 500 benchmark
+- Offer context: "An analyst covering AAPL would compare these metrics to sector peers like MSFT and GOOGL"
+- End the analyst section with: "That was the equity analyst lens — Sharpe and drawdown first, single-stock focus."
 
 ---
 
-## Demo Complete — Summary of All 11 Tools
+## Step 13: Portfolio Manager Framing — same data, different lens
+
+Do NOT call `get_risk_metrics` again — reuse the exact same output from Step 12.
+
+Re-explain the SAME results using the portfolio manager persona framing:
+- Lead with: "From a portfolio perspective..."
+- Emphasize max drawdown FIRST as the primary risk concern ("what is my worst-case loss on this holding?")
+- Then discuss beta as portfolio-level market sensitivity
+- Mention Sharpe ratio LAST as a secondary quality check
+- Frame AAPL as "a holding in your book" not an individual security
+- Add portfolio context: "A PM would next check correlation with other holdings to assess concentration risk"
+- End the PM section with: "That was the portfolio manager lens — drawdown and beta first, portfolio holdings focus."
+
+---
+
+## Step 14: Persona Contrast — side-by-side explanation
+
+Do NOT call any tools. This is a pure explanation step.
+
+Print a comparison explaining how the two personas interpreted the SAME data differently:
+
+### How the two personas differ
+
+Both personas used the exact same risk metrics from `get_risk_metrics`. The difference is entirely in framing and priority:
+
+| Aspect | Equity Analyst | Portfolio Manager |
+|--------|---------------|-------------------|
+| Leads with | Sharpe ratio (return quality) | Max drawdown (worst-case loss) |
+| Frames ticker as | Individual security under coverage | A holding in the portfolio book |
+| Beta means | Market sensitivity for the stock | Portfolio-level systematic risk |
+| Next step | Compare to sector peers | Check correlation with other holdings |
+
+The underlying data is identical — the persona determines which metrics matter most and how they are communicated to the audience.
+
+---
+
+## Demo Complete — Summary of All 11 Tools and 2 Personas
 
 You have just seen the full Finance AI Skill in action. Here is a summary of every tool demonstrated:
 
@@ -239,8 +280,15 @@ You have just seen the full Finance AI Skill in action. Here is a summary of eve
 | `liquidity_predictor` + `predict_liquidity` | Train a regression model on client data, then score new clients for liquidity risk |
 | `investor_classifier` + `classify_investor` | Train a classification model, then assign a segment label to a new investor profile |
 
+### Personas (2 modes)
+
+| Persona | Framing |
+|---------|---------|
+| `/finance-analyst` | Equity analyst lens — Sharpe/drawdown first, single-stock focus |
+| `/finance-pm` | Portfolio manager lens — drawdown/beta first, portfolio holdings focus |
+
 ---
 
-Demo complete. You can now use `/finance` for ad-hoc analysis, or `/finance-analyst` and `/finance-pm` for role-specific framing.
+Demo complete. You can now use `/finance` for ad-hoc analysis, or `/finance-analyst` and `/finance-pm` for role-specific framing. Steps 12-13 above showed how each persona frames the same data differently.
 
 > For educational/informational purposes only. Not financial advice. Past results do not guarantee future performance.
