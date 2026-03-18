@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.2
 milestone_name: Role Walkthroughs
-status: defining_requirements
-stopped_at: Defining requirements
-last_updated: "2026-03-18T21:00:00.000Z"
-last_activity: 2026-03-18 — Milestone v1.2 started
+status: ready_to_plan
+stopped_at: Roadmap created — ready to plan Phase 9
+last_updated: "2026-03-18T21:30:00.000Z"
+last_activity: 2026-03-18 — v1.2 roadmap created (4 phases, 17 requirements mapped)
 progress:
-  total_phases: 0
+  total_phases: 4
   completed_phases: 0
-  total_plans: 0
+  total_plans: 6
   completed_plans: 0
   percent: 0
 ---
@@ -21,35 +21,39 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-18)
 
 **Core value:** Finance professionals get professional-grade analysis by describing what they want — the skill writes, runs, and interprets the code for them.
-**Current focus:** v1.2 Role Walkthroughs — 5 remaining role-based walkthrough slash commands
+**Current focus:** v1.2 Phase 9 — Market-Analysis Walkthroughs (Hedge Fund + Investment Banking)
 
 ## Current Position
 
-Phase: Not started (defining requirements)
-Plan: —
-Status: Defining requirements
-Last activity: 2026-03-18 — Milestone v1.2 started
+Phase: 9 of 12 (Market-Analysis Walkthroughs)
+Plan: 0 of 2 in current phase
+Status: Ready to plan
+Last activity: 2026-03-18 — v1.2 roadmap created
 
 ```
 v1.0: [████████████████████] 100% (16/16 plans) — SHIPPED
 v1.1: [████████████████████] 100% (9/9 plans) — SHIPPED
-v1.2: [░░░░░░░░░░░░░░░░░░░] 0% — Defining requirements
+v1.2: [░░░░░░░░░░░░░░░░░░░] 0% (0/6 plans) — Ready to plan
 ```
 
 ## Performance Metrics
 
-**v1.0 baseline:**
-- 4 phases, 16 plans, ~5 min/plan avg
-
-**v1.1:**
-- 4 phases, 9 plans, ~3 min/plan avg
+**v1.0 baseline:** 4 phases, 16 plans, ~5 min/plan avg
+**v1.1:** 4 phases, 9 plans, ~3 min/plan avg
+**v1.2:** 4 phases, 6 plans estimated — TBD
 
 ## Accumulated Context
 
 ### Decisions
 
 All decisions logged in PROJECT.md Key Decisions table.
-Full history archived in `.planning/milestones/v1.0-ROADMAP.md` and `.planning/milestones/v1.1-ROADMAP.md`.
+
+v1.2 roadmap decisions:
+- Phase 9: HF + IB grouped — both use market analysis tools (volatility, correlation, comparison)
+- Phase 10: FPA + ACCT grouped — both lead with CSV ingestion and data profiling
+- Phase 11: PE standalone — ML classifier focus (investor classifier) warrants its own phase
+- Phase 12: TEST-01 as dedicated verification phase — tests all 5 walkthroughs together
+- No new Python code in v1.2 — all walkthroughs reuse existing 11 MCP tools
 
 ### Pending Todos
 
@@ -57,10 +61,10 @@ None.
 
 ### Blockers/Concerns
 
-None.
+None. Existing 11 MCP tools are fully functional. Equity research walkthrough pattern (v1.1) is the established template for all 5 remaining walkthroughs.
 
 ## Session Continuity
 
 Last session: 2026-03-18
-Stopped at: Defining v1.2 requirements
+Stopped at: Roadmap created for v1.2, ready to plan Phase 9
 Resume file: None

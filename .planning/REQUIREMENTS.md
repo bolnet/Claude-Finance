@@ -59,29 +59,29 @@ None — all 5 remaining walkthroughs scoped for this milestone.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| HF-01 | — | Pending |
-| HF-02 | — | Pending |
-| HF-03 | — | Pending |
-| HF-04 | — | Pending |
-| IB-01 | — | Pending |
-| IB-02 | — | Pending |
-| IB-03 | — | Pending |
-| FPA-01 | — | Pending |
-| FPA-02 | — | Pending |
-| FPA-03 | — | Pending |
-| PE-01 | — | Pending |
-| PE-02 | — | Pending |
-| PE-03 | — | Pending |
-| ACCT-01 | — | Pending |
-| ACCT-02 | — | Pending |
-| ACCT-03 | — | Pending |
-| TEST-01 | — | Pending |
+| HF-01 | Phase 9 | Pending |
+| HF-02 | Phase 9 | Pending |
+| HF-03 | Phase 9 | Pending |
+| HF-04 | Phase 9 | Pending |
+| IB-01 | Phase 9 | Pending |
+| IB-02 | Phase 9 | Pending |
+| IB-03 | Phase 9 | Pending |
+| FPA-01 | Phase 10 | Pending |
+| FPA-02 | Phase 10 | Pending |
+| FPA-03 | Phase 10 | Pending |
+| PE-01 | Phase 11 | Pending |
+| PE-02 | Phase 11 | Pending |
+| PE-03 | Phase 11 | Pending |
+| ACCT-01 | Phase 10 | Pending |
+| ACCT-02 | Phase 10 | Pending |
+| ACCT-03 | Phase 10 | Pending |
+| TEST-01 | Phase 12 | Pending |
 
 **Coverage:**
 - v1.2 requirements: 17 total
-- Mapped to phases: 0
-- Unmapped: 17 ⚠️
+- Mapped to phases: 17
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-18*
-*Last updated: 2026-03-18 after initial definition*
+*Last updated: 2026-03-18 — traceability mapped after roadmap creation*
