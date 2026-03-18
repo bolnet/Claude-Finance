@@ -91,12 +91,13 @@ Plans:
   2. `/finance-analyst` variant emphasizes stock analysis and peer comparison in its responses
   3. `/finance-pm` variant emphasizes portfolio risk/return attribution in its responses
   4. The MCP server is packaged and documented for marketplace submission
+**Plans**: 4 plans
 
 Plans:
-- [ ] 04-01: claude.ai MCP integration — remote transport, server packaging, connection guide for non-technical users
-- [ ] 04-02: Analyst persona variant (`.claude/commands/finance-analyst.md`) + PM/trader variant (`finance-pm.md`)
-- [ ] 04-03: Marketplace packaging — README, screenshots, install instructions, listing metadata
-- [ ] 04-04: Phase 4 functional testing — end-to-end verification of claude.ai integration, persona variants, and full user journey
+- [ ] 04-01-PLAN.md — HTTP server entry point (server_http.py) for claude.ai remote connections (WEB-01)
+- [ ] 04-02-PLAN.md — Persona command variants: finance-analyst.md (PERS-01) + finance-pm.md (PERS-02)
+- [ ] 04-03-PLAN.md — Plugin packaging (finance-mcp-plugin/) + ngrok launch script (WEB-02, WEB-03)
+- [ ] 04-04-PLAN.md — Phase 4 functional testing — persona verification + plugin structure sign-off
 
 ## Progress
 
