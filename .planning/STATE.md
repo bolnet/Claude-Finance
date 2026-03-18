@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Phase 1 complete — 01-03 checkpoint approved, /finance verified working, all packages OK
-last_updated: "2026-03-18T01:13:52.138Z"
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-03-18T01:47:33.616Z"
 last_activity: "2026-03-18 — 01-03 complete: /finance command verified, finance MCP server connected, all packages OK"
 progress:
   total_phases: 4
   completed_phases: 1
-  total_plans: 3
-  completed_plans: 3
+  total_plans: 7
+  completed_plans: 4
   percent: 67
 ---
 
@@ -52,6 +52,7 @@ Progress: [███████░░░] 67%
 *Updated after each plan completion*
 | Phase 01-infrastructure-mcp-scaffold P02 | 3 | 2 tasks | 6 files |
 | Phase 01-infrastructure-mcp-scaffold P03 | 2 | 2 tasks | 2 files |
+| Phase 02-market-analysis-tools P01 | 2 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -71,6 +72,8 @@ Recent decisions affecting current work:
 - [Phase 01-02]: validate_dataframe requires minimum 2 rows — single-row DataFrames break return calculations; fail fast at fetch time
 - [Phase 01-infrastructure-mcp-scaffold]: /finance command uses dynamic context injection (!command syntax) for python version, packages, pwd, CSV files, and output dir status before any code generation
 - [Phase 01-infrastructure-mcp-scaffold]: Write-then-execute is the ONLY allowed Python execution method — finance_output/last_run.py written via Write tool, then executed via Bash; no inline python3 -c strings
+- [Phase 02-market-analysis-tools]: Use mcp.add_tool() for Phase 2 tool registration — imported functions must be registered explicitly, not decorated
+- [Phase 02-market-analysis-tools]: Import finance_mcp.output first in all tools/ modules — ensures Agg backend set before pyplot
 
 ### Pending Todos
 
@@ -84,6 +87,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-18T01:10:00Z
-Stopped at: Phase 1 complete — 01-03 checkpoint approved, /finance verified working, all packages OK
+Last session: 2026-03-18T01:47:33.614Z
+Stopped at: Completed 02-01-PLAN.md
 Resume file: None
