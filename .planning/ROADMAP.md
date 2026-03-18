@@ -115,7 +115,7 @@ Plans:
 | 9. Market-Analysis Walkthroughs | v1.2 | 2/2 | Complete | 2026-03-18 |
 | 10. Data-Profiling Walkthroughs | v1.2 | 2/2 | Complete | 2026-03-18 |
 | 11. ML-Classifier Walkthrough | 1/1 | Complete    | 2026-03-18 | - |
-| 12. Walkthrough Test Suite | 1/1 | Complete   | 2026-03-18 | - |
+| 12. Walkthrough Test Suite | 1/1 | Complete    | 2026-03-18 | - |
 
 ---
 *Last updated: 2026-03-18 — Phase 11 plan created*

@@ -4,7 +4,7 @@ milestone: v1.2
 milestone_name: Role Walkthroughs
 status: planning
 stopped_at: Completed 12-01-PLAN.md (Walkthrough Test Suite)
-last_updated: "2026-03-18T21:53:53.764Z"
+last_updated: "2026-03-18T21:55:58.461Z"
 last_activity: 2026-03-18 — v1.2 roadmap created
 progress:
   total_phases: 4
