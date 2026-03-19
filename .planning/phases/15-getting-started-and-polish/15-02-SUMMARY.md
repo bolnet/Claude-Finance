@@ -22,10 +22,11 @@ decisions:
   - "Social card generated via Pillow — scaled source chart to 1200px wide on brand dark blue (#0f3460) canvas, centred vertically; 188KB well under 300KB limit"
   - "Navigation audit found zero errors — all 4 pages already had correct relative nav links, no absolute asset paths, no localhost references"
 metrics:
-  duration: 3 minutes
+  duration: ~20 minutes
   completed_date: "2026-03-18"
-  tasks_completed: 2
+  tasks_completed: 3
   files_changed: 5
+requirements-completed: [INFRA-04]
 ---
 
 # Phase 15 Plan 02: Social Card, OG Meta Tags, and Nav Audit Summary
@@ -38,6 +39,7 @@ metrics:
 |------|------|--------|-------|
 | 1 | Create social card image and update OG meta tags on all 4 pages | 28186d4 | docs/assets/images/social-card.png, docs/index.html, docs/features.html, docs/walkthroughs.html, docs/getting-started.html |
 | 2 | Cross-page navigation link audit | c513997 | (no file changes — audit passed clean) |
+| 3 | Visual and deployment verification | — (human-approved checkpoint) | User confirmed approval |
 
 ## What Was Built
 
@@ -79,7 +81,11 @@ metrics:
 
 **Python test suite:** 151 passed, 1 xfailed, 19 xpassed — no regression.
 
-**Pending (requires deployment — Task 3 checkpoint):**
+**Task 3 — Human verification checkpoint:**
+- User reviewed Getting Started page layout, social card OG preview, and navigation integrity
+- User approved — checkpoint passed
+
+**Post-deployment verification (manual, when deployed):**
 - opengraph.xyz rich preview card verification
 - Lighthouse Performance >= 80 on all 4 pages
 
@@ -99,5 +105,7 @@ None — plan executed exactly as written.
 **Commits exist:**
 - 28186d4: feat(15-02): create social card image and update OG meta tags on all 4 pages
 - c513997: chore(15-02): cross-page navigation link audit — zero errors found
+
+**Task 3:** User checkpoint — approved by human. No commit required.
 
 ## Self-Check: PASSED
