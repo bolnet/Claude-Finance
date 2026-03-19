@@ -84,7 +84,7 @@ Plans:
 **Plans:** 2/2 plans complete
 
 Plans:
-- [ ] 14-01-PLAN.md — Landing page content + all Phase 14 CSS component classes
+- [x] 14-01-PLAN.md — Landing page content + all Phase 14 CSS component classes (completed 2026-03-19)
 - [ ] 14-02-PLAN.md — Features page (11 tools by category) + Walkthroughs page (6 role cards)
 
 ### Phase 15: Getting Started and Polish
@@ -115,7 +115,7 @@ Plans:
 | 11. ML-Classifier Walkthrough | v1.2 | 1/1 | Complete | 2026-03-18 |
 | 12. Walkthrough Test Suite | v1.2 | 1/1 | Complete | 2026-03-18 |
 | 13. Site Scaffolding and Visual Assets | v1.3 | 2/2 | Complete | 2026-03-18 |
-| 14. Content Pages | 2/2 | Complete   | 2026-03-19 | - |
+| 14. Content Pages | 2/2 | Complete    | 2026-03-19 | - |
 | 15. Getting Started and Polish | v1.3 | 0/? | Not started | - |
 
 ---
