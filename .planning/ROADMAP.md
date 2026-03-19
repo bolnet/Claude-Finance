@@ -134,7 +134,7 @@ Plans:
 | 14. Content Pages | v1.3 | 2/2 | Complete | 2026-03-19 |
 | 15. Getting Started and Polish | v1.3 | 2/2 | Complete | 2026-03-19 |
 | 16. Plugin Infrastructure and Deal Flow Skills | v1.4 | 2/2 | Complete | 2026-03-19 |
-| 17. Portfolio and Value Creation Skills | v1.4 | 0/2 | Not started | - |
+| 17. Portfolio and Value Creation Skills | 1/2 | In Progress|  | - |
 | 18. Analytical Engine Skills | v1.4 | 0/1 | Not started | - |
 
 ---

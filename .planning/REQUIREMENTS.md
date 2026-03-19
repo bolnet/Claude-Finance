@@ -21,11 +21,11 @@ Requirements for restructuring PE into Anthropic's plugin pattern with MCP-power
 - [x] **SKILL-03**: `dd-checklist` skill — sector-tailored diligence workstreams with request lists and status tracking; references MCP `ingest_csv` for data room file profiling
 - [x] **SKILL-04**: `dd-meeting-prep` skill — targeted questions, benchmarks, red flags for management meetings, expert calls, customer references
 - [x] **SKILL-05**: `ic-memo` skill — structured IC memo synthesizing diligence, financials, deal terms; references MCP `classify_investor` for quantitative scoring
-- [ ] **SKILL-06**: `portfolio-monitoring` skill — KPI tracking, drift detection, quarterly dashboard; references MCP `classify_investor` for classification drift and `get_risk_metrics` for market benchmarks
-- [ ] **SKILL-07**: `returns-analysis` skill — IRR/MOIC sensitivity tables, entry/exit scenarios; references MCP `get_returns` and `get_risk_metrics` for public comp return data
-- [ ] **SKILL-08**: `unit-economics` skill — ARR cohorts, LTV/CAC, net retention, revenue quality analysis; references MCP `ingest_csv` for cohort data profiling
-- [ ] **SKILL-09**: `value-creation-plan` skill — EBITDA bridge, 100-day plan, KPI targets, operational levers
-- [ ] **SKILL-10**: `ai-readiness` skill — portfolio AI opportunity scan, per-company go/wait gate, quick wins ranked by EBITDA impact
+- [x] **SKILL-06**: `portfolio-monitoring` skill — KPI tracking, drift detection, quarterly dashboard; references MCP `classify_investor` for classification drift and `get_risk_metrics` for market benchmarks
+- [x] **SKILL-07**: `returns-analysis` skill — IRR/MOIC sensitivity tables, entry/exit scenarios; references MCP `get_returns` and `get_risk_metrics` for public comp return data
+- [x] **SKILL-08**: `unit-economics` skill — ARR cohorts, LTV/CAC, net retention, revenue quality analysis; references MCP `ingest_csv` for cohort data profiling
+- [x] **SKILL-09**: `value-creation-plan` skill — EBITDA bridge, 100-day plan, KPI targets, operational levers
+- [x] **SKILL-10**: `ai-readiness` skill — portfolio AI opportunity scan, per-company go/wait gate, quick wins ranked by EBITDA impact
 
 ### PE Skills — Analytical Engine (5 MCP-powered skills unique to us)
 
@@ -90,11 +90,11 @@ Requirements for restructuring PE into Anthropic's plugin pattern with MCP-power
 | SKILL-03 | Phase 16 | Complete |
 | SKILL-04 | Phase 16 | Complete |
 | SKILL-05 | Phase 16 | Complete |
-| SKILL-06 | Phase 17 | Pending |
-| SKILL-07 | Phase 17 | Pending |
-| SKILL-08 | Phase 17 | Pending |
-| SKILL-09 | Phase 17 | Pending |
-| SKILL-10 | Phase 17 | Pending |
+| SKILL-06 | Phase 17 | Complete |
+| SKILL-07 | Phase 17 | Complete |
+| SKILL-08 | Phase 17 | Complete |
+| SKILL-09 | Phase 17 | Complete |
+| SKILL-10 | Phase 17 | Complete |
 | SKILL-11 | Phase 18 | Pending |
 | SKILL-12 | Phase 18 | Pending |
 | SKILL-13 | Phase 18 | Pending |
