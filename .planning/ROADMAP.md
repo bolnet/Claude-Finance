@@ -68,8 +68,8 @@ Full phase details: `.planning/milestones/v1.2-ROADMAP.md`
 **Plans:** 2/2 plans complete
 
 Plans:
-- [ ] 13-01-PLAN.md — Create docs/ folder structure, HTML template, CSS, JS, curate 8 chart images, favicon
-- [ ] 13-02-PLAN.md — Enable GitHub Pages deployment, verify live URL, visual verification
+- [x] 13-01-PLAN.md — Create docs/ folder structure, HTML template, CSS, JS, curate 8 chart images, favicon
+- [x] 13-02-PLAN.md — Enable GitHub Pages deployment, verify live URL, visual verification
 
 ### Phase 14: Content Pages
 **Goal**: Finance professionals can visit the landing page, understand the skill's value in plain English, see real chart outputs as proof, explore all 11 tools by category, and read the 6 role walkthroughs with scenario context
@@ -81,7 +81,11 @@ Plans:
   3. Landing page includes role-based entry points (e.g., "I'm a hedge fund analyst") that link to the relevant walkthrough card
   4. Features page groups all 11 MCP tools by category (market analysis vs ML workflows) with plain-language outcome descriptions — no developer jargon in descriptions
   5. Walkthroughs page presents all 6 role cards, each containing a situation sentence, a verbatim example prompt, and a representative chart image
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 14-01-PLAN.md — Landing page content + all Phase 14 CSS component classes
+- [ ] 14-02-PLAN.md — Features page (11 tools by category) + Walkthroughs page (6 role cards)
 
 ### Phase 15: Getting Started and Polish
 **Goal**: Finance professionals can follow a complete, step-by-step installation path for either Claude Code or claude.ai, every page links correctly to every other page, and the site renders correctly on mobile and produces a rich social card when shared on LinkedIn
@@ -110,9 +114,9 @@ Plans:
 | 10. Data-Profiling Walkthroughs | v1.2 | 2/2 | Complete | 2026-03-18 |
 | 11. ML-Classifier Walkthrough | v1.2 | 1/1 | Complete | 2026-03-18 |
 | 12. Walkthrough Test Suite | v1.2 | 1/1 | Complete | 2026-03-18 |
-| 13. Site Scaffolding and Visual Assets | 2/2 | Complete    | 2026-03-18 | - |
-| 14. Content Pages | v1.3 | 0/? | Not started | - |
+| 13. Site Scaffolding and Visual Assets | v1.3 | 2/2 | Complete | 2026-03-18 |
+| 14. Content Pages | v1.3 | 0/2 | Not started | - |
 | 15. Getting Started and Polish | v1.3 | 0/? | Not started | - |
 
 ---
-*Last updated: 2026-03-18 — Phase 13 planned (2 plans)*
+*Last updated: 2026-03-18 — Phase 14 planned (2 plans)*
