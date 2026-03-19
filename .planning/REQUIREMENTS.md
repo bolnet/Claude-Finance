@@ -29,11 +29,11 @@ Requirements for restructuring PE into Anthropic's plugin pattern with MCP-power
 
 ### PE Skills — Analytical Engine (5 MCP-powered skills unique to us)
 
-- [ ] **SKILL-11**: `prospect-scoring` skill — train ML classifier on CRM export, score individual prospects with confidence; uses MCP `investor_classifier` + `classify_investor`
-- [ ] **SKILL-12**: `liquidity-risk` skill — train regression model on portfolio data, predict liquidity risk per target; uses MCP `liquidity_predictor` + `predict_liquidity`
-- [ ] **SKILL-13**: `pipeline-profiling` skill — full EDA on CRM exports: completeness, distributions, outliers, data quality; uses MCP `ingest_csv`
-- [ ] **SKILL-14**: `public-comp-analysis` skill — compare public market comps for valuation context, correlation analysis; uses MCP `compare_tickers` + `correlation_map`
-- [ ] **SKILL-15**: `market-risk-scan` skill — Sharpe, drawdown, beta for public benchmarks of portfolio companies; uses MCP `get_volatility` + `get_risk_metrics` + `analyze_stock`
+- [x] **SKILL-11**: `prospect-scoring` skill — train ML classifier on CRM export, score individual prospects with confidence; uses MCP `investor_classifier` + `classify_investor`
+- [x] **SKILL-12**: `liquidity-risk` skill — train regression model on portfolio data, predict liquidity risk per target; uses MCP `liquidity_predictor` + `predict_liquidity`
+- [x] **SKILL-13**: `pipeline-profiling` skill — full EDA on CRM exports: completeness, distributions, outliers, data quality; uses MCP `ingest_csv`
+- [x] **SKILL-14**: `public-comp-analysis` skill — compare public market comps for valuation context, correlation analysis; uses MCP `compare_tickers` + `correlation_map`
+- [x] **SKILL-15**: `market-risk-scan` skill — Sharpe, drawdown, beta for public benchmarks of portfolio companies; uses MCP `get_volatility` + `get_risk_metrics` + `analyze_stock`
 
 ### PE Commands (15 lightweight loaders)
 
@@ -95,11 +95,11 @@ Requirements for restructuring PE into Anthropic's plugin pattern with MCP-power
 | SKILL-08 | Phase 17 | Complete |
 | SKILL-09 | Phase 17 | Complete |
 | SKILL-10 | Phase 17 | Complete |
-| SKILL-11 | Phase 18 | Pending |
-| SKILL-12 | Phase 18 | Pending |
-| SKILL-13 | Phase 18 | Pending |
-| SKILL-14 | Phase 18 | Pending |
-| SKILL-15 | Phase 18 | Pending |
+| SKILL-11 | Phase 18 | Complete |
+| SKILL-12 | Phase 18 | Complete |
+| SKILL-13 | Phase 18 | Complete |
+| SKILL-14 | Phase 18 | Complete |
+| SKILL-15 | Phase 18 | Complete |
 | CMD-01 | Phase 16 | Complete |
 | CMD-02 | Phase 16 | Complete |
 | CMD-03 | Phase 16 | Complete |
