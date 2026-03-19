@@ -6,7 +6,7 @@
 - ✅ **v1.1 Interactive Demo** — Phases 5–8 (shipped 2026-03-18)
 - ✅ **v1.2 Role Walkthroughs** — Phases 9–12 (shipped 2026-03-18)
 - ✅ **v1.3 GitHub Pages Site** — Phases 13–15 (shipped 2026-03-19)
-- 🔄 **v1.4 Private Equity Plugin (Anthropic Pattern)** — Phases 16–18 (active)
+- ✅ **v1.4 Private Equity Plugin (Anthropic Pattern)** — Phases 16–18 (shipped 2026-03-19)
 
 ## Phases
 
@@ -57,63 +57,16 @@ Full phase details: `.planning/milestones/v1.3-ROADMAP.md`
 
 </details>
 
-### v1.4 Private Equity Plugin (Anthropic Pattern) (Active)
+<details>
+<summary>✅ v1.4 Private Equity Plugin (Phases 16–18) — SHIPPED 2026-03-19</summary>
 
-**Milestone Goal:** Restructure the private equity offering to match Anthropic's financial-services-plugins pattern — complete plugin infrastructure, 15 dedicated PE skills (10 Anthropic-pattern + 5 analytical engine), and 15 lightweight commands — installable via `claude plugin install`.
+- [x] **Phase 16: Plugin Infrastructure and Deal Flow Skills** — Plugin manifest, hooks, MCP wiring, directory structure + deal-sourcing, deal-screening, dd-checklist, dd-meeting-prep, ic-memo skills and their commands (2/2 plans, completed 2026-03-19)
+- [x] **Phase 17: Portfolio and Value Creation Skills** — portfolio-monitoring, returns-analysis, unit-economics, value-creation-plan, ai-readiness skills and their commands (2/2 plans, completed 2026-03-19)
+- [x] **Phase 18: Analytical Engine Skills** — prospect-scoring, liquidity-risk, pipeline-profiling, public-comp-analysis, market-risk-scan skills (MCP-powered) and their commands (2/2 plans, completed 2026-03-19)
 
-- [x] **Phase 16: Plugin Infrastructure and Deal Flow Skills** - Plugin manifest, hooks, MCP wiring, directory structure + deal-sourcing, deal-screening, dd-checklist, dd-meeting-prep, ic-memo skills and their commands (completed 2026-03-19)
-- [x] **Phase 17: Portfolio and Value Creation Skills** - portfolio-monitoring, returns-analysis, unit-economics, value-creation-plan, ai-readiness skills and their commands (completed 2026-03-19)
-- [x] **Phase 18: Analytical Engine Skills** - prospect-scoring, liquidity-risk, pipeline-profiling, public-comp-analysis, market-risk-scan skills (MCP-powered) and their commands (completed 2026-03-19)
+Full phase details: `.planning/milestones/v1.4-ROADMAP.md`
 
-## Phase Details
-
-### Phase 16: Plugin Infrastructure and Deal Flow Skills
-**Goal**: The plugin is installable with a valid manifest and MCP wiring, and PE professionals can invoke deal-flow commands (sourcing, screening, diligence checklist, meeting prep, IC memo) that load fully-authored skills
-**Depends on**: Nothing (first v1.4 phase)
-**Requirements**: PLUG-01, PLUG-02, PLUG-03, PLUG-04, SKILL-01, SKILL-02, SKILL-03, SKILL-04, SKILL-05, CMD-01, CMD-02, CMD-03, CMD-04, CMD-05
-**Success Criteria** (what must be TRUE):
-  1. Running `claude plugin install` against the finance-mcp-plugin directory completes without errors and the plugin appears in the installed list
-  2. `.claude-plugin/plugin.json` contains correct bolnet/Claude-Finance URLs, version, and author — no `[owner]` placeholder remaining
-  3. A PE professional can invoke `/project:source` and receive a deal-sourcing workflow that uses MCP `ingest_csv` to profile CRM data
-  4. A PE professional can invoke `/project:screen-deal` and receive a pass/fail screening framework with a one-page memo structure
-  5. A PE professional can invoke `/project:ic-memo` and receive a structured IC memo template that calls `classify_investor` for quantitative scoring
-**Plans**: 2 plans
-
-Plans:
-- [x] 16-01-PLAN.md — Plugin infrastructure: plugin.json, hooks/hooks.json, .mcp.json, directory structure (PLUG-01 through PLUG-04)
-- [x] 16-02-PLAN.md — Deal flow skills: deal-sourcing, deal-screening, dd-checklist, dd-meeting-prep, ic-memo (SKILL-01 through SKILL-05) and their commands (CMD-01 through CMD-05)
-
-### Phase 17: Portfolio and Value Creation Skills
-**Goal**: PE professionals can invoke portfolio-stage commands (monitoring, returns, unit economics, value creation, AI readiness) that load fully-authored skills with clear frameworks and MCP tool integration where applicable
-**Depends on**: Phase 16
-**Requirements**: SKILL-06, SKILL-07, SKILL-08, SKILL-09, SKILL-10, CMD-06, CMD-07, CMD-08, CMD-09, CMD-10
-**Success Criteria** (what must be TRUE):
-  1. A PE professional can invoke `/project:portfolio` and receive a KPI tracking dashboard framework that calls `classify_investor` for classification drift and `get_risk_metrics` for market benchmarks
-  2. A PE professional can invoke `/project:returns` and receive IRR/MOIC sensitivity tables backed by live `get_returns` and `get_risk_metrics` MCP data for public comps
-  3. A PE professional can invoke `/project:unit-economics` and receive an ARR cohort and LTV/CAC analysis framework that uses `ingest_csv` for cohort data profiling
-  4. A PE professional can invoke `/project:value-creation` and receive an EBITDA bridge with a 100-day plan and KPI target structure
-  5. A PE professional can invoke `/project:ai-readiness` and receive a per-company go/wait gate with quick wins ranked by EBITDA impact
-**Plans**: 2 plans
-
-Plans:
-- [x] 17-01-PLAN.md — Portfolio and value creation skills: portfolio-monitoring, returns-analysis, unit-economics, value-creation-plan, ai-readiness (SKILL-06 through SKILL-10)
-- [x] 17-02-PLAN.md — Portfolio commands and test suite: portfolio, returns, unit-economics, value-creation, ai-readiness commands (CMD-06 through CMD-10)
-
-### Phase 18: Analytical Engine Skills
-**Goal**: PE professionals can invoke MCP-powered analytical commands (prospect scoring, liquidity risk, pipeline profiling, public comps, market risk) that run live ML models and market data tools — our unique advantage over Anthropic's vanilla plugin
-**Depends on**: Phase 17
-**Requirements**: SKILL-11, SKILL-12, SKILL-13, SKILL-14, SKILL-15, CMD-11, CMD-12, CMD-13, CMD-14, CMD-15
-**Success Criteria** (what must be TRUE):
-  1. A PE professional can invoke `/project:score-prospect` and the skill trains an ML classifier on a CRM CSV export via `investor_classifier`, then scores individual prospects with confidence levels via `classify_investor`
-  2. A PE professional can invoke `/project:liquidity-risk` and the skill trains a regression model on portfolio data via `liquidity_predictor` and returns predicted liquidity risk scores via `predict_liquidity`
-  3. A PE professional can invoke `/project:profile-pipeline` and receive a full EDA report (completeness, distributions, outliers, data quality flags) on a CRM CSV export via `ingest_csv`
-  4. A PE professional can invoke `/project:public-comps` and receive a comparison chart and correlation heatmap for public market comps via `compare_tickers` and `correlation_map`
-  5. A PE professional can invoke `/project:market-risk` and receive Sharpe ratio, drawdown, and beta for public benchmarks via `get_volatility`, `get_risk_metrics`, and `analyze_stock`
-**Plans**: 2 plans
-
-Plans:
-- [ ] 18-01-PLAN.md — Analytical engine skills: prospect-scoring, liquidity-risk, pipeline-profiling, public-comp-analysis, market-risk-scan (SKILL-11 through SKILL-15)
-- [ ] 18-02-PLAN.md — Analytical engine commands and test suite: score-prospect, liquidity-risk, profile-pipeline, public-comps, market-risk commands (CMD-11 through CMD-15)
+</details>
 
 ## Progress
 
@@ -136,7 +89,7 @@ Plans:
 | 15. Getting Started and Polish | v1.3 | 2/2 | Complete | 2026-03-19 |
 | 16. Plugin Infrastructure and Deal Flow Skills | v1.4 | 2/2 | Complete | 2026-03-19 |
 | 17. Portfolio and Value Creation Skills | v1.4 | 2/2 | Complete | 2026-03-19 |
-| 18. Analytical Engine Skills | 2/2 | Complete    | 2026-03-19 | - |
+| 18. Analytical Engine Skills | v1.4 | 2/2 | Complete | 2026-03-19 |
 
 ---
-*Last updated: 2026-03-19 — Phase 18 planned (2 plans)*
+*Last updated: 2026-03-19 — v1.4 milestone complete*
