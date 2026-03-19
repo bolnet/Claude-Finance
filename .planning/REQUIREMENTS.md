@@ -1,93 +1,126 @@
-# Requirements: Finance AI Skill — v1.3 GitHub Pages Site
+# Requirements: Finance AI Skill — v1.4 Private Equity Plugin (Anthropic Pattern)
 
-**Defined:** 2026-03-18
+**Defined:** 2026-03-19
 **Core Value:** Finance professionals get professional-grade analysis by describing what they want — the skill writes, runs, and interprets the code for them.
 
-## v1.3 Requirements
+## v1.4 Requirements
 
-Requirements for the GitHub Pages showcase site. Each maps to roadmap phases.
+Requirements for restructuring PE into Anthropic's plugin pattern with MCP-powered analytical engine.
 
-### Infrastructure
+### Plugin Infrastructure
 
-- [x] **INFRA-01**: Site deploys from `docs/` folder on main branch with `.nojekyll` file
-- [x] **INFRA-02**: Shared HTML template (head, nav bar, footer) used by all pages
-- [x] **INFRA-03**: All pages are mobile responsive with proper viewport meta
-- [x] **INFRA-04**: Social card (OG meta image) displays when site is shared on LinkedIn/Twitter
+- [ ] **PLUG-01**: `plugin.json` manifest with name, version, description, author, correct bolnet/Claude-Finance URLs
+- [ ] **PLUG-02**: `hooks/hooks.json` file (empty array)
+- [ ] **PLUG-03**: `.mcp.json` referencing finance MCP server for all tool-powered skills
+- [ ] **PLUG-04**: Plugin directory follows Anthropic's structure: `.claude-plugin/`, `commands/`, `skills/`, `hooks/`
 
-### Landing Page
+### PE Skills — Anthropic Pattern (10 skills matching their coverage)
 
-- [x] **LAND-01**: Hero section with finance-outcome headline and CTA targeting finance professionals
-- [x] **LAND-02**: Real chart output visuals embedded as proof of capability
-- [x] **LAND-03**: Role-based entry points linking to specific walkthrough sections ("I'm a hedge fund analyst")
-- [x] **LAND-04**: Stats bar displaying key credibility numbers (11 tools, 6 walkthroughs, etc.)
+- [ ] **SKILL-01**: `deal-sourcing` skill — discover targets by criteria, CRM check, draft founder outreach; references MCP `ingest_csv` for CRM data profiling
+- [ ] **SKILL-02**: `deal-screening` skill — screen CIMs/teasers against fund criteria, pass/fail framework, one-page memo; references MCP `ingest_csv` for deal data extraction
+- [ ] **SKILL-03**: `dd-checklist` skill — sector-tailored diligence workstreams with request lists and status tracking; references MCP `ingest_csv` for data room file profiling
+- [ ] **SKILL-04**: `dd-meeting-prep` skill — targeted questions, benchmarks, red flags for management meetings, expert calls, customer references
+- [ ] **SKILL-05**: `ic-memo` skill — structured IC memo synthesizing diligence, financials, deal terms; references MCP `classify_investor` for quantitative scoring
+- [ ] **SKILL-06**: `portfolio-monitoring` skill — KPI tracking, drift detection, quarterly dashboard; references MCP `classify_investor` for classification drift and `get_risk_metrics` for market benchmarks
+- [ ] **SKILL-07**: `returns-analysis` skill — IRR/MOIC sensitivity tables, entry/exit scenarios; references MCP `get_returns` and `get_risk_metrics` for public comp return data
+- [ ] **SKILL-08**: `unit-economics` skill — ARR cohorts, LTV/CAC, net retention, revenue quality analysis; references MCP `ingest_csv` for cohort data profiling
+- [ ] **SKILL-09**: `value-creation-plan` skill — EBITDA bridge, 100-day plan, KPI targets, operational levers
+- [ ] **SKILL-10**: `ai-readiness` skill — portfolio AI opportunity scan, per-company go/wait gate, quick wins ranked by EBITDA impact
 
-### Features Page
+### PE Skills — Analytical Engine (5 MCP-powered skills unique to us)
 
-- [x] **FEAT-01**: 11 MCP tools displayed organized by category (market analysis vs ML workflows)
-- [x] **FEAT-02**: Visual examples (chart screenshots) for each tool category
+- [ ] **SKILL-11**: `prospect-scoring` skill — train ML classifier on CRM export, score individual prospects with confidence; uses MCP `investor_classifier` + `classify_investor`
+- [ ] **SKILL-12**: `liquidity-risk` skill — train regression model on portfolio data, predict liquidity risk per target; uses MCP `liquidity_predictor` + `predict_liquidity`
+- [ ] **SKILL-13**: `pipeline-profiling` skill — full EDA on CRM exports: completeness, distributions, outliers, data quality; uses MCP `ingest_csv`
+- [ ] **SKILL-14**: `public-comp-analysis` skill — compare public market comps for valuation context, correlation analysis; uses MCP `compare_tickers` + `correlation_map`
+- [ ] **SKILL-15**: `market-risk-scan` skill — Sharpe, drawdown, beta for public benchmarks of portfolio companies; uses MCP `get_volatility` + `get_risk_metrics` + `analyze_stock`
 
-### Walkthroughs Page
+### PE Commands (15 lightweight loaders)
 
-- [x] **WALK-01**: 6 role cards with scenario descriptions and tool usage per role
-- [x] **WALK-02**: Role-specific chart examples embedded per walkthrough card
-
-### Getting Started Page
-
-- [x] **START-01**: Claude Code installation path with copy-paste commands
-- [x] **START-02**: claude.ai installation path with step-by-step instructions
-
-### Visual Assets
-
-- [x] **VIS-01**: 6-8 best charts curated from `finance_output/charts/`
-- [x] **VIS-02**: All site images web-optimized (800px wide, <150KB each)
-- [x] **VIS-03**: Favicon for browser tab
+- [ ] **CMD-01**: `source.md` command — loads deal-sourcing skill (3-5 lines)
+- [ ] **CMD-02**: `screen-deal.md` command — loads deal-screening skill
+- [ ] **CMD-03**: `dd-checklist.md` command — loads dd-checklist skill
+- [ ] **CMD-04**: `dd-prep.md` command — loads dd-meeting-prep skill
+- [ ] **CMD-05**: `ic-memo.md` command — loads ic-memo skill
+- [ ] **CMD-06**: `portfolio.md` command — loads portfolio-monitoring skill
+- [ ] **CMD-07**: `returns.md` command — loads returns-analysis skill
+- [ ] **CMD-08**: `unit-economics.md` command — loads unit-economics skill
+- [ ] **CMD-09**: `value-creation.md` command — loads value-creation-plan skill
+- [ ] **CMD-10**: `ai-readiness.md` command — loads ai-readiness skill
+- [ ] **CMD-11**: `score-prospect.md` command — loads prospect-scoring skill
+- [ ] **CMD-12**: `liquidity-risk.md` command — loads liquidity-risk skill
+- [ ] **CMD-13**: `profile-pipeline.md` command — loads pipeline-profiling skill
+- [ ] **CMD-14**: `public-comps.md` command — loads public-comp-analysis skill
+- [ ] **CMD-15**: `market-risk.md` command — loads market-risk-scan skill
 
 ## Future Requirements
 
-### Site Enhancements
+### Additional Verticals
 
-- **SITE-01**: Dark mode toggle
-- **SITE-02**: Animated hero section with chart transitions
-- **SITE-03**: Blog/changelog page for release notes
-- **SITE-04**: Custom domain (CNAME) configuration
+- **VERT-01**: Investment Banking plugin (same Anthropic pattern)
+- **VERT-02**: Equity Research plugin (same Anthropic pattern)
+- **VERT-03**: Wealth Management plugin (same Anthropic pattern)
+- **VERT-04**: FP&A plugin (same Anthropic pattern)
+
+### Marketplace
+
+- **MKT-01**: Register as marketplace for `claude plugin marketplace add`
+- **MKT-02**: PyPI publish for `pip install finance-mcp`
 
 ## Out of Scope
 
 | Feature | Reason |
 |---------|--------|
-| Live interactive demo | GitHub Pages is static; cannot run MCP server |
-| Testimonials section | No real user testimonials yet; placeholder quotes destroy credibility with finance audience |
-| Competitor comparison table | Invites scrutiny, looks defensive |
-| Analytics/tracking | Not needed for v1.3; revisit if custom domain added |
-| Jekyll/SSG build pipeline | Plain HTML is simpler and avoids version conflicts |
+| Other verticals (IB, ER, WM) | v1.4 is PE only — other verticals deferred to future milestones |
+| New MCP tools | v1.4 uses existing 11 tools — no new Python code for tool registration |
+| Modifying existing walkthrough | walkthrough-private-equity.md stays unchanged alongside new plugin |
+| Real CRM integration (email/Slack) | Anthropic's deal-sourcing references Gmail/Slack MCP — we don't have those connectors |
+| PyPI publishing | Separate milestone concern |
 
 ## Traceability
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INFRA-01 | Phase 13 | Complete |
-| INFRA-02 | Phase 13 | Complete |
-| INFRA-03 | Phase 13 | Complete |
-| INFRA-04 | Phase 15 | Complete |
-| LAND-01 | Phase 14 | Complete |
-| LAND-02 | Phase 14 | Complete |
-| LAND-03 | Phase 14 | Complete |
-| LAND-04 | Phase 14 | Complete |
-| FEAT-01 | Phase 14 | Complete |
-| FEAT-02 | Phase 14 | Complete |
-| WALK-01 | Phase 14 | Complete |
-| WALK-02 | Phase 14 | Complete |
-| START-01 | Phase 15 | Complete |
-| START-02 | Phase 15 | Complete |
-| VIS-01 | Phase 13 | Complete |
-| VIS-02 | Phase 13 | Complete |
-| VIS-03 | Phase 13 | Complete |
+| PLUG-01 | — | Pending |
+| PLUG-02 | — | Pending |
+| PLUG-03 | — | Pending |
+| PLUG-04 | — | Pending |
+| SKILL-01 | — | Pending |
+| SKILL-02 | — | Pending |
+| SKILL-03 | — | Pending |
+| SKILL-04 | — | Pending |
+| SKILL-05 | — | Pending |
+| SKILL-06 | — | Pending |
+| SKILL-07 | — | Pending |
+| SKILL-08 | — | Pending |
+| SKILL-09 | — | Pending |
+| SKILL-10 | — | Pending |
+| SKILL-11 | — | Pending |
+| SKILL-12 | — | Pending |
+| SKILL-13 | — | Pending |
+| SKILL-14 | — | Pending |
+| SKILL-15 | — | Pending |
+| CMD-01 | — | Pending |
+| CMD-02 | — | Pending |
+| CMD-03 | — | Pending |
+| CMD-04 | — | Pending |
+| CMD-05 | — | Pending |
+| CMD-06 | — | Pending |
+| CMD-07 | — | Pending |
+| CMD-08 | — | Pending |
+| CMD-09 | — | Pending |
+| CMD-10 | — | Pending |
+| CMD-11 | — | Pending |
+| CMD-12 | — | Pending |
+| CMD-13 | — | Pending |
+| CMD-14 | — | Pending |
+| CMD-15 | — | Pending |
 
 **Coverage:**
-- v1.3 requirements: 17 total
-- Mapped to phases: 17
-- Unmapped: 0
+- v1.4 requirements: 34 total
+- Mapped to phases: 0
+- Unmapped: 34 ⚠️
 
 ---
-*Requirements defined: 2026-03-18*
-*Last updated: 2026-03-18 — traceability mapped after roadmap creation*
+*Requirements defined: 2026-03-19*
+*Last updated: 2026-03-19 after initial definition*
