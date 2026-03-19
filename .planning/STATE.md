@@ -4,7 +4,7 @@ milestone: v1.4
 milestone_name: Private Equity Plugin
 status: planning
 stopped_at: Completed 16-02-PLAN.md
-last_updated: "2026-03-19T21:27:52.513Z"
+last_updated: "2026-03-19T21:31:16.702Z"
 last_activity: 2026-03-19 — v1.4 roadmap created (Phases 16–18)
 progress:
   total_phases: 3
