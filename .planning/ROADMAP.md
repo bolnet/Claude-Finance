@@ -77,7 +77,7 @@ Full phase details: `.planning/milestones/v1.3-ROADMAP.md`
   3. A PE professional can invoke `/project:source` and receive a deal-sourcing workflow that uses MCP `ingest_csv` to profile CRM data
   4. A PE professional can invoke `/project:screen-deal` and receive a pass/fail screening framework with a one-page memo structure
   5. A PE professional can invoke `/project:ic-memo` and receive a structured IC memo template that calls `classify_investor` for quantitative scoring
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [ ] 16-01-PLAN.md — Plugin infrastructure: plugin.json, hooks/hooks.json, .mcp.json, directory structure (PLUG-01 through PLUG-04)
@@ -93,7 +93,7 @@ Plans:
   3. A PE professional can invoke `/project:unit-economics` and receive an ARR cohort and LTV/CAC analysis framework that uses `ingest_csv` for cohort data profiling
   4. A PE professional can invoke `/project:value-creation` and receive an EBITDA bridge with a 100-day plan and KPI target structure
   5. A PE professional can invoke `/project:ai-readiness` and receive a per-company go/wait gate with quick wins ranked by EBITDA impact
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [ ] 17-01-PLAN.md — Portfolio and value creation skills: portfolio-monitoring, returns-analysis, unit-economics, value-creation-plan, ai-readiness (SKILL-06 through SKILL-10) and their commands (CMD-06 through CMD-10)
@@ -108,7 +108,7 @@ Plans:
   3. A PE professional can invoke `/project:profile-pipeline` and receive a full EDA report (completeness, distributions, outliers, data quality flags) on a CRM CSV export via `ingest_csv`
   4. A PE professional can invoke `/project:public-comps` and receive a comparison chart and correlation heatmap for public market comps via `compare_tickers` and `correlation_map`
   5. A PE professional can invoke `/project:market-risk` and receive Sharpe ratio, drawdown, and beta for public benchmarks via `get_volatility`, `get_risk_metrics`, and `analyze_stock`
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [ ] 18-01-PLAN.md — Analytical engine skills: prospect-scoring, liquidity-risk, pipeline-profiling, public-comp-analysis, market-risk-scan (SKILL-11 through SKILL-15) and their commands (CMD-11 through CMD-15)
