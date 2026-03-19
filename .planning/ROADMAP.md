@@ -96,8 +96,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 17-01-PLAN.md — Portfolio and value creation skills: portfolio-monitoring, returns-analysis, unit-economics, value-creation-plan, ai-readiness (SKILL-06 through SKILL-10)
-- [ ] 17-02-PLAN.md — Portfolio commands and test suite: portfolio, returns, unit-economics, value-creation, ai-readiness commands (CMD-06 through CMD-10)
+- [x] 17-01-PLAN.md — Portfolio and value creation skills: portfolio-monitoring, returns-analysis, unit-economics, value-creation-plan, ai-readiness (SKILL-06 through SKILL-10)
+- [x] 17-02-PLAN.md — Portfolio commands and test suite: portfolio, returns, unit-economics, value-creation, ai-readiness commands (CMD-06 through CMD-10)
 
 ### Phase 18: Analytical Engine Skills
 **Goal**: PE professionals can invoke MCP-powered analytical commands (prospect scoring, liquidity risk, pipeline profiling, public comps, market risk) that run live ML models and market data tools — our unique advantage over Anthropic's vanilla plugin
@@ -112,7 +112,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 18-01-PLAN.md — Analytical engine skills: prospect-scoring, liquidity-risk, pipeline-profiling, public-comp-analysis, market-risk-scan (SKILL-11 through SKILL-15) and their commands (CMD-11 through CMD-15)
+- [ ] 18-01-PLAN.md — Analytical engine skills: prospect-scoring, liquidity-risk, pipeline-profiling, public-comp-analysis, market-risk-scan (SKILL-11 through SKILL-15)
+- [ ] 18-02-PLAN.md — Analytical engine commands and test suite: score-prospect, liquidity-risk, profile-pipeline, public-comps, market-risk commands (CMD-11 through CMD-15)
 
 ## Progress
 
@@ -134,8 +135,8 @@ Plans:
 | 14. Content Pages | v1.3 | 2/2 | Complete | 2026-03-19 |
 | 15. Getting Started and Polish | v1.3 | 2/2 | Complete | 2026-03-19 |
 | 16. Plugin Infrastructure and Deal Flow Skills | v1.4 | 2/2 | Complete | 2026-03-19 |
-| 17. Portfolio and Value Creation Skills | 2/2 | Complete    | 2026-03-19 | - |
-| 18. Analytical Engine Skills | v1.4 | 0/1 | Not started | - |
+| 17. Portfolio and Value Creation Skills | v1.4 | 2/2 | Complete | 2026-03-19 |
+| 18. Analytical Engine Skills | v1.4 | 0/2 | Not started | - |
 
 ---
-*Last updated: 2026-03-19 — Phase 17 planned (2 plans)*
+*Last updated: 2026-03-19 — Phase 18 planned (2 plans)*
