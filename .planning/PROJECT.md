@@ -6,18 +6,7 @@ A Claude Code native skill (and claude.ai plugin) that lets finance professional
 
 The skill is an MCP server with 11 tools covering market analysis (price charts, returns, volatility, risk metrics, comparison, correlation) and ML workflows (CSV ingestion, liquidity risk regression, investor segment classification). Two persona variants ship: equity analyst (`/finance-analyst`) and portfolio manager (`/finance-pm`). A guided `/demo` walkthrough demonstrates all capabilities step-by-step.
 
-**v1.1 shipped.** v1.0 MVP (38 requirements) + v1.1 Interactive Demo (17 requirements) delivered across 8 phases.
-
-## Current Milestone: v1.3 GitHub Pages Site
-
-**Goal:** Build a beautiful, multi-page GitHub Pages site that showcases the Finance AI Skill to finance professionals — landing page with a strong hook, features, role walkthroughs, demo visuals, and getting started guide.
-
-**Target features:**
-- Landing page with compelling value proposition and hook for finance professionals
-- Features page showcasing 11 MCP tools across market analysis and ML workflows
-- Walkthroughs page highlighting 6 role-based scenarios (equity research, hedge fund, IB, FP&A, PE, accounting)
-- Getting Started page with installation for Claude Code and claude.ai
-- Visual examples using actual chart outputs (price charts, correlation heatmaps, confusion matrices, etc.)
+**v1.4 shipped.** 4 milestones (v1.0–v1.4) delivered across 18 phases. The plugin is installable via `claude plugin install` with 15 PE skills, 15 commands, and 11 MCP tools.
 
 ## Core Value
 
@@ -42,10 +31,15 @@ Finance professionals get professional-grade analysis by describing what they wa
 - ✓ Bundled sample CSV for ML workflow demos (no user data required) — v1.1
 - ✓ Persona contrast demo: analyst vs PM framing on same risk metrics data — v1.1
 - ✓ 6 role-based walkthroughs (equity research, hedge fund, IB, FP&A, PE, accounting) — v1.2
+- ✓ GitHub Pages landing site at bolnet.github.io/Claude-Finance — v1.3
+- ✓ Anthropic-pattern plugin infrastructure (plugin.json, hooks.json, .mcp.json) — v1.4
+- ✓ 15 PE skills across deal flow, portfolio, and analytical engine tiers — v1.4
+- ✓ 15 lightweight commands (`/project:source` through `/project:market-risk`) — v1.4
+- ✓ ML-chain skill pattern (investor_classifier→classify_investor, liquidity_predictor→predict_liquidity) — v1.4
+- ✓ `[owner]` placeholder replaced with bolnet/Claude-Finance in plugin.json — v1.4
 
 ### Active
 
-- [ ] Replace `[owner]` placeholder in `finance-mcp-plugin/.claude-plugin/plugin.json` before marketplace submission
 - [ ] Add Phase 2+3 MCP tool names to `/finance` command `allowed-tools` (SKILL.md inconsistency with direct MCP dispatch)
 - [ ] Alpha Vantage integration for fundamental data (earnings, P/E, revenue) — DATA-01
 - [ ] FRED integration for macroeconomic indicators — DATA-02
@@ -64,7 +58,7 @@ Finance professionals get professional-grade analysis by describing what they wa
 
 ## Context
 
-**v1.2 shipped 2026-03-18.** 12 phases, 31 plans, 3,832 LOC Python, 105 tests passing, 6 role walkthroughs.
+**v1.4 shipped 2026-03-19.** Anthropic-pattern PE plugin with 15 skills, 15 commands, 100 new tests. 18 phases across 4 milestones (v1.0–v1.4). Single-page landing at bolnet.github.io/Claude-Finance.
 
 **Tech stack:** Python 3.14, FastMCP 2.x, yfinance 0.2.54+, scikit-learn 1.8.0, pandas, matplotlib (Agg), seaborn, joblib
 
@@ -97,6 +91,11 @@ Finance professionals get professional-grade analysis by describing what they wa
 | Persona framing via instructional prose in demo.md | Cannot invoke slash commands from slash commands | ✓ Good — Claude interprets framing correctly |
 | xfail as CI gate for network-dependent tests | Tests degrade gracefully when Yahoo Finance unreachable | ✓ Good — xpassed confirms connectivity |
 | liquidity_predictor restricted to 3 features | Full CSV columns caused column-mismatch at inference time | ✓ Good — fixed inference stability |
+| Anthropic plugin pattern for PE | Match financial-services-plugins structure for marketplace compatibility | ✓ Good — installable via `claude plugin install` |
+| 15 skills split across 3 tiers | Deal flow → portfolio → analytical engine progression mirrors PE workflow | ✓ Good — clear separation of concerns |
+| 4-line command loaders | Commands are thin wrappers; all logic in SKILL.md | ✓ Good — zero duplication, easy to maintain |
+| ML-chain skill pattern (train→predict) | Two-step MCP tool chains for prospect scoring and liquidity risk | ✓ Good — established reusable pattern |
+| No MCP tools for value-creation-plan and ai-readiness | Pure framework skills; no live data needed | ✓ Good — keeps skills focused |
 
 ---
-*Last updated: 2026-03-18 after v1.3 milestone start*
+*Last updated: 2026-03-19 after v1.4 milestone completion*
